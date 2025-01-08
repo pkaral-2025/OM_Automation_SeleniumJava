@@ -611,3 +611,44 @@
 17:59:15.975 [main] INFO  - Entering Last name.. 
 17:59:16.056 [main] INFO  - Entering First name.. 
 17:59:16.202 [main] INFO  - Entering Zipcode.. 
+14:14:52.097 [main] INFO  - Goto my account-->Click on Login.. 
+14:14:52.125 [main] INFO  - Entering email and password.. 
+14:17:15.907 [main] INFO  - Goto my account-->Click on Login.. 
+14:17:15.935 [main] INFO  - Entering email and password.. 
+14:19:14.476 [main] INFO  - Goto my account-->Click on Login.. 
+14:19:14.512 [main] INFO  - Entering email and password.. 
+14:19:52.250 [main] INFO  - Goto my account-->Click on Login.. 
+14:19:52.251 [main] INFO  - Entering email and password.. 
+14:20:23.799 [main] INFO  - Entering Last name.. 
+14:20:23.920 [main] INFO  - Entering First name.. 
+14:20:24.043 [main] INFO  - Entering Zipcode.. 
+14:20:37.726 [main] INFO  - Entering ReferralId.. 
+14:20:47.869 [main] INFO  - Entering PayorName.. 
+14:21:16.966 [main] INFO  - Entering DOB.. 
+14:21:27.122 [main] INFO  - Entering primaryPhone.. 
+14:21:32.406 [main] INFO  - Entering streetAddress.. 
+14:21:32.527 [main] INFO  - Entering streetAddress.. 
+14:29:24.976 [main] INFO  - Goto my account-->Click on Login.. 
+14:29:25.007 [main] INFO  - Entering email and password.. 
+14:30:06.783 [main] INFO  - Goto my account-->Click on Login.. 
+14:30:06.786 [main] INFO  - Entering email and password.. 
+14:36:18.679 [main] INFO  - Goto my account-->Click on Login.. 
+14:36:18.703 [main] INFO  - Entering email and password.. 
+14:36:35.288 [main] INFO  - Goto my account-->Click on Login.. 
+14:36:35.290 [main] INFO  - Entering email and password.. 
+14:37:47.930 [main] INFO  - Goto my account-->Click on Login.. 
+14:37:47.961 [main] INFO  - Entering email and password.. 
+14:37:57.393 [main] INFO  - Entering Last name.. 
+14:38:00.551 [main] INFO  - Entering First name.. 
+14:38:00.654 [main] INFO  - Entering Zipcode.. 
+14:38:05.937 [main] INFO  - Goto my account-->Click on Login.. 
+14:38:05.938 [main] INFO  - Entering email and password.. 
+14:38:28.503 [main] INFO  - Entering Last name.. 
+14:38:28.638 [main] INFO  - Entering First name.. 
+14:38:28.831 [main] INFO  - Entering Zipcode.. 
+14:38:37.730 [main] INFO  - Entering ReferralId.. 
+14:38:47.691 [main] INFO  - Entering PayorName.. 
+14:39:17.924 [main] INFO  - Entering DOB.. 
+14:39:28.117 [main] INFO  - Entering primaryPhone.. 
+14:39:33.414 [main] INFO  - Entering streetAddress.. 
+14:39:33.534 [main] INFO  - Entering streetAddress.. 
