@@ -276,7 +276,7 @@ public class LoginSteps {
 
 	@Given("user refresh page and serach element")
 	public void user_refresh_page_and_serach_element() throws InterruptedException {
-	    // Write code here that turns the phrase above into concrete actions
+
 	    BaseClass.waitForPageLoad();
 	}
 

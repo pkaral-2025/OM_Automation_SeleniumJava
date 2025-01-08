@@ -186,6 +186,7 @@ public class BaseClass {
 				if (overlay.isDisplayed()) {
 					// Close the overlay, or wait for it to disappear
 					overlay.click(); // Or use a more specific action to dismiss the overlay
+					System.out.println("Clicked on overlay");
 				}
 
 				// overly-------
@@ -194,6 +195,9 @@ public class BaseClass {
 				WebElement element = driver.findElement(By.xpath(
 						"//div[@onmouseover='pega.c.cbe.processHoverEvent(event)']//preceding::span[@class='menu-item-title' and contains(text(),'Home')]"));
 
+				
+
+				
 				// Create Actions object
 				Actions actions = new Actions(driver);
 

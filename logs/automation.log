@@ -652,3 +652,166 @@
 14:39:28.117 [main] INFO  - Entering primaryPhone.. 
 14:39:33.414 [main] INFO  - Entering streetAddress.. 
 14:39:33.534 [main] INFO  - Entering streetAddress.. 
+16:31:40.513 [main] INFO  - Goto my account-->Click on Login.. 
+16:31:40.540 [main] INFO  - Entering email and password.. 
+16:33:49.298 [main] INFO  - Goto my account-->Click on Login.. 
+16:33:49.300 [main] INFO  - Entering email and password.. 
+16:34:08.052 [main] INFO  - Entering Last name.. 
+16:34:08.145 [main] INFO  - Entering First name.. 
+16:34:08.237 [main] INFO  - Entering Zipcode.. 
+16:34:19.815 [main] INFO  - Entering ReferralId.. 
+16:34:30.170 [main] INFO  - Entering PayorName.. 
+16:34:57.424 [main] INFO  - Entering DOB.. 
+16:35:07.577 [main] INFO  - Entering primaryPhone.. 
+16:35:12.855 [main] INFO  - Entering streetAddress.. 
+16:35:12.978 [main] INFO  - Entering streetAddress.. 
+16:48:26.962 [main] INFO  - Goto my account-->Click on Login.. 
+16:48:26.992 [main] INFO  - Entering email and password.. 
+16:58:37.153 [main] INFO  - Goto my account-->Click on Login.. 
+16:58:37.189 [main] INFO  - Entering email and password.. 
+17:00:16.805 [main] INFO  - Goto my account-->Click on Login.. 
+17:00:16.832 [main] INFO  - Entering email and password.. 
+17:00:39.272 [main] INFO  - Entering Last name.. 
+17:00:49.150 [main] INFO  - Entering First name.. 
+17:00:49.333 [main] INFO  - Entering Zipcode.. 
+17:00:54.825 [main] INFO  - Goto my account-->Click on Login.. 
+17:00:54.827 [main] INFO  - Entering email and password.. 
+17:01:15.813 [main] INFO  - Goto my account-->Click on Login.. 
+17:01:15.840 [main] INFO  - Entering email and password.. 
+17:03:26.133 [main] INFO  - Goto my account-->Click on Login.. 
+17:03:26.165 [main] INFO  - Entering email and password.. 
+17:04:30.611 [main] INFO  - Goto my account-->Click on Login.. 
+17:04:30.613 [main] INFO  - Entering email and password.. 
+17:05:13.552 [main] INFO  - Entering Last name.. 
+17:05:13.699 [main] INFO  - Entering First name.. 
+17:05:13.825 [main] INFO  - Entering Zipcode.. 
+17:05:26.440 [main] INFO  - Entering ReferralId.. 
+17:05:36.495 [main] INFO  - Entering PayorName.. 
+17:06:03.951 [main] INFO  - Entering DOB.. 
+17:06:14.126 [main] INFO  - Entering primaryPhone.. 
+17:06:19.428 [main] INFO  - Entering streetAddress.. 
+17:06:19.544 [main] INFO  - Entering streetAddress.. 
+17:08:49.103 [main] INFO  - Goto my account-->Click on Login.. 
+17:08:49.125 [main] INFO  - Entering email and password.. 
+17:09:38.775 [main] INFO  - Goto my account-->Click on Login.. 
+17:09:38.799 [main] INFO  - Entering email and password.. 
+17:09:59.713 [main] INFO  - Goto my account-->Click on Login.. 
+17:09:59.713 [main] INFO  - Entering email and password.. 
+17:10:51.168 [main] INFO  - Goto my account-->Click on Login.. 
+17:10:51.304 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:10:51.309 [main] DEBUG - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+17:10:51.312 [main] DEBUG - Parsing relationship: /_rels/.rels
+17:10:51.459 [main] TRACE - Loading type system org.apache.poi.schemas.ooxml.system.ooxml
+17:10:51.461 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+17:10:51.462 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+17:10:51.463 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+17:10:51.463 [main] TRACE - Loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+17:10:51.465 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+17:10:51.481 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLTOOLS
+17:10:51.483 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+17:10:51.489 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLSCHEMA
+17:10:51.495 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLLANG
+17:10:51.499 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLLANG
+17:10:51.501 [main] TRACE - Reading unresolved handles for type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+17:10:51.502 [main] TRACE - Finished loading type system org.apache.xmlbeans.metadata.system.sXMLCONFIG
+17:10:51.504 [main] TRACE - Reading unresolved handles for type system org.apache.poi.schemas.ooxml.system.ooxml
+17:10:51.571 [main] TRACE - Finished loading type system org.apache.poi.schemas.ooxml.system.ooxml
+17:10:51.572 [main] TRACE - Resolving type for handle themefd26doctype
+17:10:51.630 [main] TRACE - Resolving type for handle stylesheet5d8bdoctype
+17:10:51.637 [main] TRACE - Resolving type for handle ctstylesheet4257type
+17:10:51.643 [main] TRACE - Resolving type for handle ctfonts6623type
+17:10:51.648 [main] TRACE - Resolving type for handle ctfont14d8type
+17:10:51.655 [main] TRACE - Resolving type for handle ctfills2c6ftype
+17:10:51.659 [main] TRACE - Resolving type for handle ctfill550ctype
+17:10:51.661 [main] TRACE - Resolving type for handle ctborders0d66type
+17:10:51.666 [main] TRACE - Resolving type for handle ctborderf935type
+17:10:51.670 [main] TRACE - Resolving type for handle ctcellxfs1322type
+17:10:51.674 [main] TRACE - Resolving type for handle ctxf97f7type
+17:10:51.679 [main] TRACE - Resolving type for handle ctcellstylexfsa81ftype
+17:10:51.684 [main] TRACE - Resolving type for handle ctdxfsb26atype
+17:10:51.688 [main] TRACE - Resolving type for handle cttablestyles872ftype
+17:10:51.693 [main] TRACE - Resolving type for handle sstf81fdoctype
+17:10:51.704 [main] TRACE - Resolving type for handle ctsst44f3type
+17:10:51.715 [main] TRACE - Resolving type for handle ctrsta472type
+17:10:51.733 [main] DEBUG - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+17:10:51.734 [main] TRACE - Resolving type for handle workbookec17doctype
+17:10:51.739 [main] TRACE - Resolving type for handle ctworkbook83c3type
+17:10:51.745 [main] TRACE - Resolving type for handle ctsheets49fdtype
+17:10:51.747 [main] TRACE - Resolving type for handle ctsheet4dbetype
+17:10:51.749 [main] TRACE - Resolving type for handle strelationshipid1e94type
+17:10:51.752 [main] TRACE - Resolving type for handle worksheetf539doctype
+17:10:51.762 [main] TRACE - Resolving type for handle ctworksheet530dtype
+17:10:51.768 [main] TRACE - Resolving type for handle ctsheetdata8408type
+17:10:51.772 [main] TRACE - Resolving type for handle ctrowdd39type
+17:10:51.778 [main] TRACE - Resolving type for handle ctcell842btype
+17:10:51.784 [main] TRACE - Resolving type for handle stcellrefe4e0type
+17:10:51.793 [main] TRACE - Resolving type for handle ctcols627ctype
+17:10:51.797 [main] TRACE - Resolving type for handle ctcola95ftype
+17:10:51.830 [main] TRACE - Resolving type for handle cthyperlinks6416type
+17:10:51.832 [main] TRACE - Resolving type for handle cthyperlink0c85type
+17:10:51.839 [main] TRACE - Resolving type for handle stxstringf179type
+17:10:51.842 [main] TRACE - Resolving type for handle stcelltypebf95type
+17:20:26.247 [main] INFO  - Goto my account-->Click on Login.. 
+17:20:26.273 [main] INFO  - Entering email and password.. 
+17:21:27.330 [main] INFO  - Entering Last name.. 
+17:21:27.419 [main] INFO  - Entering First name.. 
+17:21:27.507 [main] INFO  - Entering Zipcode.. 
+17:21:44.426 [main] INFO  - Goto my account-->Click on Login.. 
+17:21:44.447 [main] INFO  - Entering email and password.. 
+17:22:02.806 [main] INFO  - Entering Last name.. 
+17:22:02.905 [main] INFO  - Entering First name.. 
+17:22:03.015 [main] INFO  - Entering Zipcode.. 
+17:24:27.321 [main] INFO  - Goto my account-->Click on Login.. 
+17:24:27.359 [main] INFO  - Entering email and password.. 
+17:26:42.946 [main] INFO  - Goto my account-->Click on Login.. 
+17:26:42.970 [main] INFO  - Entering email and password.. 
+17:28:16.617 [main] INFO  - Goto my account-->Click on Login.. 
+17:28:16.648 [main] INFO  - Entering email and password.. 
+17:37:46.746 [main] INFO  - Goto my account-->Click on Login.. 
+17:37:46.774 [main] INFO  - Entering email and password.. 
+17:38:30.625 [main] INFO  - Entering Last name.. 
+17:38:30.853 [main] INFO  - Entering First name.. 
+17:38:30.964 [main] INFO  - Entering Zipcode.. 
+17:39:39.109 [main] INFO  - Goto my account-->Click on Login.. 
+17:39:39.141 [main] INFO  - Entering email and password.. 
+17:40:26.812 [main] INFO  - Entering Last name.. 
+17:40:26.915 [main] INFO  - Entering First name.. 
+17:40:27.001 [main] INFO  - Entering Zipcode.. 
+18:08:10.272 [main] INFO  - Goto my account-->Click on Login.. 
+18:08:10.297 [main] INFO  - Entering email and password.. 
+18:08:48.702 [main] INFO  - Entering Last name.. 
+18:08:48.809 [main] INFO  - Entering First name.. 
+18:08:48.890 [main] INFO  - Entering Zipcode.. 
+18:10:45.773 [main] INFO  - Goto my account-->Click on Login.. 
+18:10:45.798 [main] INFO  - Entering email and password.. 
+18:11:24.180 [main] INFO  - Entering Last name.. 
+18:11:24.279 [main] INFO  - Entering First name.. 
+18:11:24.460 [main] INFO  - Entering Zipcode.. 
+18:12:41.969 [main] INFO  - Goto my account-->Click on Login.. 
+18:12:41.995 [main] INFO  - Entering email and password.. 
+18:12:53.602 [main] INFO  - Entering Last name.. 
+18:12:53.712 [main] INFO  - Entering First name.. 
+18:12:53.828 [main] INFO  - Entering Zipcode.. 
+18:13:06.921 [main] INFO  - Entering ReferralId.. 
+18:13:16.823 [main] INFO  - Entering PayorName.. 
+18:14:50.643 [main] INFO  - Goto my account-->Click on Login.. 
+18:14:50.691 [main] INFO  - Entering email and password.. 
+18:15:30.525 [main] INFO  - Entering Last name.. 
+18:15:30.634 [main] INFO  - Entering First name.. 
+18:15:30.857 [main] INFO  - Entering Zipcode.. 
+18:16:36.384 [main] INFO  - Goto my account-->Click on Login.. 
+18:16:36.413 [main] INFO  - Entering email and password.. 
+18:18:21.864 [main] INFO  - Goto my account-->Click on Login.. 
+18:18:21.907 [main] INFO  - Entering email and password.. 
+18:18:55.790 [main] INFO  - Entering Last name.. 
+18:18:58.898 [main] INFO  - Entering First name.. 
+18:18:59.162 [main] INFO  - Entering Zipcode.. 
+18:20:35.641 [main] INFO  - Goto my account-->Click on Login.. 
+18:20:35.665 [main] INFO  - Entering email and password.. 
+18:20:44.162 [main] INFO  - Entering Last name.. 
+18:21:02.955 [main] INFO  - Entering First name.. 
+18:21:03.050 [main] INFO  - Entering Zipcode.. 
+18:22:07.145 [main] INFO  - Goto my account-->Click on Login.. 
+18:22:07.169 [main] INFO  - Entering email and password.. 
+18:31:36.572 [main] INFO  - Goto my account-->Click on Login.. 
+18:31:36.597 [main] INFO  - Entering email and password.. 
