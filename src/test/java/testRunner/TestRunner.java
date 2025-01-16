@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 //					features= {".//Features/"},
-					features= {".//Features/Login.feature"},
+					features= {".//Features/ANACases.feature"},
 						
 //						tags = "@creationOfICase",		 
 					//features= {".//Features/LoginDDTExcel.feature"},
@@ -35,7 +35,7 @@ import io.cucumber.junit.CucumberOptions;
 					dryRun=false,    // checks mapping between scenario steps and step definition methods
 					monochrome=true,    // to avoid junk characters in output
 					publish=true   // to publish report in cucumber server
-					//tags="@sanity"  // this will execute scenarios tagged with @sanity
+//					tags="@creationOfQCase"  // this will execute scenarios tagged with @sanity
 //					tags="@creationOfICase"
 					//tags="@sanity and @regression" //Scenarios tagged with both @sanity and @regression
 					//tags="@sanity and not @regression" //Scenarios tagged with @sanity but not tagged with @regression

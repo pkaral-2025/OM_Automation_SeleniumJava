@@ -284,8 +284,17 @@ public class BaseClass {
 		}
 
 	}
+	
 	// ---------dropdown-----------//
 
+	//---------------javascript button click-------------//
+	public static void javascriptClick(String radiobtn) {
+		WebElement radioButton = driver.findElement(By.xpath("//div[contains(text(),'Initial Outreach Calls Completed ?')]//following::input[2]"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", radioButton);
+	}
+	
+	
+	
 	// ------------Date-------------//
 
 //	public static void selectDate(String date) {

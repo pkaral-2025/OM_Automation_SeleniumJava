@@ -142,7 +142,7 @@ public class LoginSteps {
 	
 	@When("user enters ACISPatientID as {string}")
 	public void user_enters_ACISPatientID_as(String ACISPatientID) {
-		BaseClass.getLogger().info("Entering streetAddress.. ");
+		BaseClass.getLogger().info("Entering ACISPatientID.. ");
 		lp = new LoginPage(BaseClass.getDriver());
 		lp.setACISPatientID(ACISPatientID);
 
@@ -150,9 +150,17 @@ public class LoginSteps {
 
 	@When("user enters BranchUser as {string}")
 	public void user_enters_BranchUser_as(String BranchUser) {
-		BaseClass.getLogger().info("Entering streetAddress.. ");
+		BaseClass.getLogger().info("Entering BranchUser.. ");
 		lp = new LoginPage(BaseClass.getDriver());
 		lp.setBranchUser(BranchUser);
+
+	}
+
+	@When("user enters Intake as {string}")
+	public void user_enters_Intake_as(String Intake) {
+		BaseClass.getLogger().info("Entering Intake.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setIntake(Intake);
 
 	}
 
@@ -286,7 +294,16 @@ public class LoginSteps {
 	      
 		 BaseClass.readValueFromPage();
 	    }
-	
+	 
+
+	 //---------------javascript click---------//
+	 @Given("user click on {string} button with javascript")
+	 public void click_on_btn_using_javascript(String radiobtn) {
+	      
+		 BaseClass.javascriptClick(radiobtn);
+	    }
+	 
+	 
 	// -----------wait--------//
 	@Given("user wait for {int} seconds")
 	public void WaitForSeconds(int seconds) throws InterruptedException {

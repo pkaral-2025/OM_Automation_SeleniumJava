@@ -119,7 +119,7 @@ public class LoginPage extends BasePage {
 		txtOrderByPhoneNo.sendKeys(orderByPhoneNo);
 	}
 	
-	@FindBy(xpath = "//label[contains(text(),'ACIS Patient ID')]//following::input[2]")
+	@FindBy(xpath = "//label[contains(text(),'ACIS Patient ID')]//following::input[1]")
 	WebElement txtACISPatientID;
 	public void setACISPatientID(String ACISPatientID) {
 		txtACISPatientID.sendKeys(ACISPatientID);
@@ -129,6 +129,14 @@ public class LoginPage extends BasePage {
 	WebElement txtBranchUser;
 	public void setBranchUser(String BranchUser) {
 		txtBranchUser.sendKeys(BranchUser);
+	}
+	
+	
+
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pRoboticAutomation_AcceptedIntakeNumber']")
+	WebElement txtIntake;
+	public void setIntake(String Intake) {
+		txtIntake.sendKeys(Intake);
 	}
 	
 	
