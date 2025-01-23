@@ -68,10 +68,10 @@ Feature: Creation of cases
   #	When user select the checkbox with id "agreeTerms"
   #	Given I click on the "logoff_btn" button
   #	When user refresh the page
-#
 
 
-#
+
+
  @regression @creationOfQCase
   Scenario: Successful creation of Q case
   Given the user navigates to login page
@@ -136,9 +136,8 @@ Feature: Creation of cases
     Given I click on the "Submit_btn" button
     Given user wait for 10 seconds
     When user enters ACISPatientID as "ARS123"
-    
     When user enters BranchUser as "RGACIS"
-     When user enters Intake as "11"
-     Given I click on the "Submit_btn" button
+    When user enters Intake as "11"
+    Given I click on the "Submit_btn" button
    	Given user wait for 5 seconds
 

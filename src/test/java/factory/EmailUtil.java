@@ -5,6 +5,7 @@ import javax.mail.internet.*;
 
 import junit.framework.TestResult;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -16,11 +17,14 @@ public class EmailUtil {
 
 	private static final String HOST = "relay.owens-minor.com";
 	private static final String PORT = "25";
-	private static final String FROM_EMAIL = "automateframework1@owens-minor.com";
+	private static final String FROM_EMAIL = "SVC_automationreport@owens-minor.com";
 	private static final String TO_EMAIL = "priyanka.karalkar@owens-minor.com";
-	private static final String PASSWORD = "lacj qeda pvrc snhm";
+	private static final String PASSWORD = "E3ISht*+Gj^weJD7LCRYk%2KsxZNBPyu";
 
-	public static void sendEmail(String toEmail, List<TestCase> testCases) throws MessagingException {
+	
+	 public static void sendEmail(String toEmail, List<TestCase> testCases, List<File> attachments) throws MessagingException {
+//	 public static void sendEmail(String toEmail, List<TestCase> testCases) throws MessagingException {
+
 		String subject = "Test Execution Report";
 //        String emailBody = generateReport(results);
 
@@ -34,7 +38,8 @@ public class EmailUtil {
 		// Create a session and authenticate with the email account
 		Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("automateframework1@gmail.com", "lacj qeda pvrc snhm");
+				return new PasswordAuthentication("SVC_automationreport@owens-minor.com",
+						"E3ISht*+Gj^weJD7LCRYk%2KsxZNBPyu");
 			}
 		});
 
@@ -45,7 +50,7 @@ public class EmailUtil {
 				"<table border='1'><tr><th>Test Case ID</th><th>Description</th><th>Status</th><th>Time</th></tr>");
 
 		for (TestCase testCase : testCases) {
-			
+
 //			 String statusColor = "#000000"; // Default color for status
 //
 //		        // Determine color based on status
@@ -54,9 +59,7 @@ public class EmailUtil {
 //		        } else if ("FAILED".equalsIgnoreCase(testCase.getStatus())) {
 //		        	statusColor = "#dc3545";// Red for failed tests
 //		        }
-			
-			
-			
+
 			content.append("<tr>").append("<td>").append(testCase.getTestCaseId()).append("</td>").append("<td>")
 					.append(testCase.getDescription()).append("</td>").append("<td>").append(testCase.getStatus())
 					.append("</td>").append("<td>").append(testCase.getExecutionTime()).append("</td>").append("</tr>");
@@ -75,6 +78,7 @@ public class EmailUtil {
 
 		// Send the email
 		Transport.send(message);
+
 	}
 
 	// TestCase class to store individual test case details

@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -53,13 +54,28 @@ public class Hooks {
     public static void sendReport() {
         try {
             if (!testCases.isEmpty()) {
-                EmailUtil.sendEmail("priyanka.karalkar16@gmail.com", testCases);
+                // Prepare the list of attachments (including Cucumber report)
+                List<File> attachments = new ArrayList<>();
+                
+                // Attach the Cucumber HTML report (assuming it's generated in 'target/cucumber-reports')
+                File cucumberReport = new File("target/cucumber-reports/cucumber-report.html");
+                if (cucumberReport.exists()) {
+                    attachments.add(cucumberReport);
+                }
+
+                // Attach any other files like test logs, screenshots, etc.
+                // Example: File testLog = new File("path/to/logfile.txt");
+                // attachments.add(testLog);
+
+                // Send the email with test case data and attachments
+                EmailUtil.sendEmail("email@example.com", testCases, attachments);
                 System.out.println("Test execution report sent successfully.");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 
     // Helper method to get the scenario duration (for illustration purposes)
     private String getScenarioDuration(Scenario scenario) {
