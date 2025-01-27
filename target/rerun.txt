@@ -1,1 +1,1 @@
-file:Features/ANACases.feature:4:76
+file:Features/ANACases.feature:4

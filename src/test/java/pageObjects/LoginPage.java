@@ -132,13 +132,42 @@ public class LoginPage extends BasePage {
 	}
 	
 	
-
 	@FindBy(xpath = "//input[@name='$PpyWorkPage$pRoboticAutomation_AcceptedIntakeNumber']")
 	WebElement txtIntake;
 	public void setIntake(String Intake) {
 		txtIntake.sendKeys(Intake);
 	}
 	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pPrePrimaryPayorBenefitInformation$pPrimary_Insurance_Group']")
+	WebElement txtGroupNumber;
+	public void setGroupNumber(String GroupNumber) {
+		txtGroupNumber.sendKeys(GroupNumber);
+	}
+	
+	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pSpokeWith']")
+	WebElement txtSpokeWithField;
+	public void setSpokeWithField(String SpokeWithField) {
+		txtSpokeWithField.sendKeys(SpokeWithField);
+	}
+	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pPrePrimaryPayorBenefitInformation$pInsuranceCoveragePercentage']")
+	WebElement txtInsuranceCoveragePercentage;
+	public void setInsuranceCoveragePercentage(String InsuranceCoveragePercentage) {
+		txtInsuranceCoveragePercentage.sendKeys(InsuranceCoveragePercentage);
+	}
+	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pPrePrimaryPayorBenefitInformation$pDeductibleMax']")
+	WebElement txtDeductibleMax;
+	public void setDeductibleMax(String DeductibleMax) {
+		txtDeductibleMax.sendKeys(DeductibleMax);
+	}
+	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pPrePrimaryPayorBenefitInformation$pDeductibleMet']")
+	WebElement txtDeductibleMet;
+	public void setDeductibleMet(String DeductibleMet) {
+		txtDeductibleMet.sendKeys(DeductibleMet);
+	}
 	
 	
 	// Method to read locators from config file

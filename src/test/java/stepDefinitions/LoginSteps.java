@@ -156,6 +156,14 @@ public class LoginSteps {
 
 	}
 
+	@When("user enters Group number as {string}")
+	public void user_enters_GroupNumber_as(String GroupNumber) {
+		BaseClass.getLogger().info("Entering GroupNumber.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setGroupNumber(GroupNumber);
+
+	}
+
 	@When("user enters Intake as {string}")
 	public void user_enters_Intake_as(String Intake) {
 		BaseClass.getLogger().info("Entering Intake.. ");
@@ -164,6 +172,38 @@ public class LoginSteps {
 
 	}
 
+	@When("user enters SpokeWithField as {string}")
+	public void user_enters_SpokeWithField_as(String SpokeWithField) {
+		BaseClass.getLogger().info("Entering SpokeWithField.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setSpokeWithField(SpokeWithField);
+
+	}
+
+	@When("user enters InsuranceCoveragePercentage as {string}")
+	public void user_enters_InsuranceCoveragePercentage_as(String InsuranceCoveragePercentage) {
+		BaseClass.getLogger().info("Entering InsuranceCoveragePercentage.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setInsuranceCoveragePercentage(InsuranceCoveragePercentage);
+
+	}
+	
+	@When("user enters DeductibleMaxField as {string}")
+	public void user_enters_DeductibleMaxField_as(String DeductibleMax) {
+		BaseClass.getLogger().info("Entering DeductibleMax.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setDeductibleMax(DeductibleMax);
+
+	}
+	
+	@When("user enters DeductibleMetField as {string}")
+	public void user_enters_DeductibleMet_as(String DeductibleMet) {
+		BaseClass.getLogger().info("Entering DeductibleMet.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setDeductibleMet(DeductibleMet);
+
+	}
+	
 	
 //	@When("user enters OrderNotes as {string}")
 //	public void user_enters_OrderNotes_as(String orderNotes) {
