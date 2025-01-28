@@ -25,3 +25,44 @@
 17:53:24.461 [main] INFO  - Entering InsuranceCoveragePercentage.. 
 17:53:24.614 [main] INFO  - Entering DeductibleMax.. 
 17:53:24.766 [main] INFO  - Entering DeductibleMet.. 
+22:16:12.724 [main] INFO  - Goto my account-->Click on Login.. 
+22:16:12.771 [main] INFO  - Entering email and password.. 
+22:17:31.448 [main] INFO  - Goto my account-->Click on Login.. 
+22:17:31.451 [main] INFO  - Entering email and password.. 
+22:17:55.788 [main] INFO  - Entering Last name.. 
+22:18:03.239 [main] INFO  - Entering First name.. 
+22:18:03.377 [main] INFO  - Entering Zipcode.. 
+22:18:18.099 [main] INFO  - Entering ReferralId.. 
+22:18:29.516 [main] INFO  - Entering PayorName.. 
+22:18:59.654 [main] INFO  - Entering DOB.. 
+22:19:09.982 [main] INFO  - Entering primaryPhone.. 
+22:19:15.515 [main] INFO  - Entering streetAddress.. 
+22:19:15.806 [main] INFO  - Entering streetAddress.. 
+22:20:08.800 [main] INFO  - Entering ACISPatientID.. 
+22:20:09.009 [main] INFO  - Entering BranchUser.. 
+22:20:09.186 [main] INFO  - Entering Intake.. 
+22:20:22.388 [main] INFO  - Goto my account-->Click on Login.. 
+22:20:22.390 [main] INFO  - Entering email and password.. 
+22:21:12.939 [main] INFO  - Entering Last name.. 
+22:25:18.639 [main] INFO  - Goto my account-->Click on Login.. 
+22:25:18.688 [main] INFO  - Entering email and password.. 
+22:26:06.097 [main] INFO  - Entering Last name.. 
+22:26:33.273 [main] INFO  - Goto my account-->Click on Login.. 
+22:26:33.273 [main] INFO  - Entering email and password.. 
+22:27:08.331 [main] INFO  - Entering Last name.. 
+22:27:11.742 [main] INFO  - Entering First name.. 
+22:27:11.902 [main] INFO  - Entering Zipcode.. 
+22:27:25.382 [main] INFO  - Entering ReferralId.. 
+22:27:36.718 [main] INFO  - Entering PayorName.. 
+22:28:12.393 [main] INFO  - Entering DOB.. 
+22:28:22.701 [main] INFO  - Entering primaryPhone.. 
+22:28:28.180 [main] INFO  - Entering streetAddress.. 
+22:28:28.405 [main] INFO  - Entering streetAddress.. 
+22:29:21.534 [main] INFO  - Entering ACISPatientID.. 
+22:29:21.758 [main] INFO  - Entering BranchUser.. 
+22:29:21.940 [main] INFO  - Entering Intake.. 
+22:29:35.392 [main] INFO  - Goto my account-->Click on Login.. 
+22:29:35.392 [main] INFO  - Entering email and password.. 
+13:49:06.279 [main] INFO  - Goto my account-->Click on Login.. 
+13:49:06.318 [main] INFO  - Entering email and password.. 
+13:49:41.970 [main] INFO  - Entering Last name.. 

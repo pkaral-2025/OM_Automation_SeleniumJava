@@ -62,12 +62,6 @@ Feature: Creation of cases
    	Given I click on the "Next_btn" button
     Given user wait for 10 seconds
     Given I click on the "Submit_btn" button
-    		 		
-    	 		
-  	Given I click on the "logoff_btn" button
-  	When user select the checkbox with id "agreeTerms"
-  	Given I click on the "logoff_btn" button
-  	When user refresh the page
 
 
  @regression @creationOfQCase
@@ -195,17 +189,7 @@ Feature: Creation of cases
   
 		Given user click on "InitialOutreachCallsRadiobtn_No" button with javascript
    	Given user wait for 10 seconds
-      
-     #Given user click on "InitialOutreachCallsRadiobtn_No" button with javascript
-   #	Given user wait for 10 seconds
-   #	When user enters SpokeWithField as "James"
-   #		Given user wait for 5 seconds
-   #	Given I click on the "AdditionalfeedbackRadiobtn_No" button
-   #	Given user click on "AdditionalfeedbackRadiobtn_No" button with javascript
-   #	Given I click on the "ModalSubmit_btn" button
-   #	Given I click on the "Submit_btn" button
-   #	Given user wait for 3 seconds
-   #	Given I click on the "Submit_btn" button
+
    	
     Given I click on the "Save_btn" button
     When I retrieve the value from the page
@@ -245,3 +229,7 @@ Feature: Creation of cases
 			  When I retrieve the value from the page
 			Given I click on the "Submit_btn" button
 			Given user wait for 5 seconds
+			
+			
+			
+			

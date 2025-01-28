@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class Hooks {
     WebDriver driver;
     Properties p;
     private static List<EmailUtil.TestCase> testCases = new ArrayList<>(); // Store results for all scenarios
+    private LocalDateTime startTime; // Track the start time of each scenario
 
     @Before
     public void setup() throws IOException {
@@ -32,21 +34,31 @@ public class Hooks {
         p = BaseClass.getProperties();
         driver.get(p.getProperty("appURL"));
         driver.manage().window().maximize();
+
+        // Capture start time before each scenario starts
+        startTime = LocalDateTime.now();
     }
 
     @After
     public void afterScenario(Scenario scenario) {
+        // Capture end time after each scenario finishes
+        LocalDateTime endTime = LocalDateTime.now();
+        
+        // Calculate the duration between start and end time
+        long durationInSeconds = Duration.between(startTime, endTime).getSeconds();
+
+        // Convert the duration to a human-readable format (minutes and seconds)
+        String durationFormatted = formatDuration(durationInSeconds);
+
         // Prepare test case data to send in email
         String scenarioName = scenario.getName(); // Name of the scenario
         String scenarioStatus = scenario.getStatus().toString(); // Status of the scenario (Passed/Failed)
-        String scenarioDuration = getScenarioDuration(scenario); // Duration of the test case execution
 
         // Use scenario name or create custom TestCase ID
-        String testCaseId = "TC_" + scenarioName.replace(" ", "_");// Replace spaces in scenario name to avoid HTML issues
-        
+        String testCaseId = "TC_" + scenarioName.replace(" ", "_"); // Replace spaces in scenario name to avoid HTML issues
+
         // Dynamically adding the test case info
-//        testCases.add(new EmailUtil.TestCase("TC_" + scenario.getId(), scenarioName, scenarioStatus, scenarioDuration));
-        testCases.add(new EmailUtil.TestCase(testCaseId, scenarioName, scenarioStatus, scenarioDuration));
+        testCases.add(new EmailUtil.TestCase(testCaseId, scenarioName, scenarioStatus, durationFormatted));
     }
 
     // Send the email after all scenarios using @AfterAll
@@ -56,7 +68,7 @@ public class Hooks {
             if (!testCases.isEmpty()) {
                 // Prepare the list of attachments (including Cucumber report)
                 List<File> attachments = new ArrayList<>();
-                
+
                 // Attach the Cucumber HTML report (assuming it's generated in 'target/cucumber-reports')
                 File cucumberReport = new File("target/cucumber-reports/cucumber-report.html");
                 if (cucumberReport.exists()) {
@@ -76,17 +88,11 @@ public class Hooks {
         }
     }
 
-
-    // Helper method to get the scenario duration (for illustration purposes)
-    private String getScenarioDuration(Scenario scenario) {
-        // In real-world applications, you can track the start time of the scenario and calculate the duration
-        return "2m 30s";  // Placeholder
-    }
-
-    // Generate current time in HH:mm:ss format
-    private String getCurrentTime() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-        return LocalDateTime.now().format(formatter);
+    // Helper method to convert duration in seconds to a human-readable format (minutes and seconds)
+    private String formatDuration(long durationInSeconds) {
+        long minutes = durationInSeconds / 60;
+        long seconds = durationInSeconds % 60;
+        return String.format("%d min %d sec", minutes, seconds);
     }
 
     @AfterStep
