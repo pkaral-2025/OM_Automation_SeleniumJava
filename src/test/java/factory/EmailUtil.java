@@ -2,15 +2,10 @@ package factory;
 
 import javax.mail.*;
 import javax.mail.internet.*;
-
-import junit.framework.TestResult;
+import javax.activation.*;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Properties;
 
 public class EmailUtil {
@@ -21,12 +16,9 @@ public class EmailUtil {
 	private static final String TO_EMAIL = "priyanka.karalkar@owens-minor.com";
 	private static final String PASSWORD = "E3ISht*+Gj^weJD7LCRYk%2KsxZNBPyu";
 
-	
-	 public static void sendEmail(String toEmail, List<TestCase> testCases, List<File> attachments) throws MessagingException {
-//	 public static void sendEmail(String toEmail, List<TestCase> testCases) throws MessagingException {
-
-		String subject = "Test Execution Report";
-//        String emailBody = generateReport(results);
+	public static void sendEmail(String toEmail, List<TestCase> testCases, List<File> attachments)
+			throws MessagingException {
+		String subject = "Automation Test Execution Report";
 
 		// Set up email properties
 		Properties properties = new Properties();
@@ -45,21 +37,11 @@ public class EmailUtil {
 
 		// Create the email content (HTML format)
 		StringBuilder content = new StringBuilder();
-		content.append("<html><body><h3>Test Execution Report</h3>");
+		content.append("<html><body><h3>Automation Test Execution Report</h3>");
 		content.append(
 				"<table border='1'><tr><th>Test Case ID</th><th>Description</th><th>Status</th><th>Time</th></tr>");
 
 		for (TestCase testCase : testCases) {
-
-//			 String statusColor = "#000000"; // Default color for status
-//
-//		        // Determine color based on status
-//		        if ("PASSED".equalsIgnoreCase(testCase.getStatus())) {
-//		        	   statusColor = "#28a745";  // Green for passed tests
-//		        } else if ("FAILED".equalsIgnoreCase(testCase.getStatus())) {
-//		        	statusColor = "#dc3545";// Red for failed tests
-//		        }
-
 			content.append("<tr>").append("<td>").append(testCase.getTestCaseId()).append("</td>").append("<td>")
 					.append(testCase.getDescription()).append("</td>").append("<td>").append(testCase.getStatus())
 					.append("</td>").append("<td>").append(testCase.getExecutionTime()).append("</td>").append("</tr>");
@@ -67,18 +49,70 @@ public class EmailUtil {
 
 		content.append("</table></body></html>");
 
-		// Create the email message
-		Message message = new MimeMessage(session);
+		// Create a Multipart message to send both the email body and the attachments
+		MimeMessage message = new MimeMessage(session);
 		message.setFrom(new InternetAddress(FROM_EMAIL));
-		message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(TO_EMAIL));
-		message.setSubject("Automation Test Execution Report");
+		message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail));
+		message.setSubject(subject);
 
-		// Set the content of the email
-		message.setContent(content.toString(), "text/html");
+//		// Create a multipart message
+//		Multipart multipart = new MimeMultipart();
+//
+//		// Add the email body (HTML format)
+//		MimeBodyPart bodyPart = new MimeBodyPart();
+//		bodyPart.setContent(content.toString(), "text/html");
+//		multipart.addBodyPart(bodyPart);
+//
+//		// Add attachments to the email
+//		for (File attachment : attachments) {
+//			if (attachment.exists()) {
+//				MimeBodyPart attachmentPart = new MimeBodyPart();
+//				
+//				DataSource source = new FileDataSource(attachment);
+//				
+//				attachmentPart.setDataHandler(new DataHandler(source));
+//				attachmentPart.setFileName(attachment.getName());
+//
+//				
+//				multipart.addBodyPart(attachmentPart);
+//			}
+//		}
+
+		 Multipart multipart = new MimeMultipart();
+
+	        // Add the email body (HTML format)
+	        MimeBodyPart bodyPart = new MimeBodyPart();
+	        bodyPart.setContent(content.toString(), "text/html; charset=UTF-8");
+	        multipart.addBodyPart(bodyPart);
+
+	        // Add attachments to the email
+	        for (File attachment : attachments) {
+	            if (attachment.exists()) {
+	                MimeBodyPart attachmentPart = new MimeBodyPart();
+	                
+	                DataSource source = new FileDataSource(attachment);
+	                attachmentPart.setDataHandler(new DataHandler(source));
+	                attachmentPart.setFileName(attachment.getName());
+
+	                // Explicitly set the MIME type as text/html for the Cucumber HTML report
+	                if (attachment.getName().endsWith(".html")) {
+	                    attachmentPart.setHeader("Content-Type", "text/html; charset=UTF-8");
+	                }
+	                
+	                multipart.addBodyPart(attachmentPart);
+	            }
+	        }
+		
+		
+		
+		
+		// Set the content of the message
+		message.setContent(multipart);
 
 		// Send the email
 		Transport.send(message);
 
+		System.out.println("Email with attachments sent successfully.");
 	}
 
 	// TestCase class to store individual test case details
@@ -111,5 +145,4 @@ public class EmailUtil {
 			return executionTime;
 		}
 	}
-
 }

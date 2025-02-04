@@ -1,0 +1,920 @@
+17:48:10.380 [main] INFO  - Entering ReferralId.. 
+17:48:20.540 [main] INFO  - Entering PayorName.. 
+17:48:48.676 [main] INFO  - Entering DOB.. 
+17:48:58.961 [main] INFO  - Entering primaryPhone.. 
+17:49:04.487 [main] INFO  - Entering streetAddress.. 
+17:49:04.712 [main] INFO  - Entering streetAddress.. 
+17:49:57.816 [main] INFO  - Entering ACISPatientID.. 
+17:49:58.105 [main] INFO  - Entering BranchUser.. 
+17:49:58.276 [main] INFO  - Entering Intake.. 
+17:50:10.776 [main] INFO  - Goto my account-->Click on Login.. 
+17:50:10.778 [main] INFO  - Entering email and password.. 
+17:50:27.325 [main] INFO  - Entering Last name.. 
+17:50:28.375 [main] INFO  - Entering First name.. 
+17:50:28.540 [main] INFO  - Entering Zipcode.. 
+17:50:38.860 [main] INFO  - Entering ReferralId.. 
+17:50:49.467 [main] INFO  - Entering PayorName.. 
+17:51:17.782 [main] INFO  - Entering DOB.. 
+17:51:27.955 [main] INFO  - Entering primaryPhone.. 
+17:51:33.339 [main] INFO  - Entering streetAddress.. 
+17:51:33.540 [main] INFO  - Entering streetAddress.. 
+17:52:26.727 [main] INFO  - Entering ACISPatientID.. 
+17:52:26.991 [main] INFO  - Entering BranchUser.. 
+17:52:27.183 [main] INFO  - Entering Intake.. 
+17:53:23.550 [main] INFO  - Entering GroupNumber.. 
+17:53:24.461 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+17:53:24.614 [main] INFO  - Entering DeductibleMax.. 
+17:53:24.766 [main] INFO  - Entering DeductibleMet.. 
+22:16:12.724 [main] INFO  - Goto my account-->Click on Login.. 
+22:16:12.771 [main] INFO  - Entering email and password.. 
+22:17:31.448 [main] INFO  - Goto my account-->Click on Login.. 
+22:17:31.451 [main] INFO  - Entering email and password.. 
+22:17:55.788 [main] INFO  - Entering Last name.. 
+22:18:03.239 [main] INFO  - Entering First name.. 
+22:18:03.377 [main] INFO  - Entering Zipcode.. 
+22:18:18.099 [main] INFO  - Entering ReferralId.. 
+22:18:29.516 [main] INFO  - Entering PayorName.. 
+22:18:59.654 [main] INFO  - Entering DOB.. 
+22:19:09.982 [main] INFO  - Entering primaryPhone.. 
+22:19:15.515 [main] INFO  - Entering streetAddress.. 
+22:19:15.806 [main] INFO  - Entering streetAddress.. 
+22:20:08.800 [main] INFO  - Entering ACISPatientID.. 
+22:20:09.009 [main] INFO  - Entering BranchUser.. 
+22:20:09.186 [main] INFO  - Entering Intake.. 
+22:20:22.388 [main] INFO  - Goto my account-->Click on Login.. 
+22:20:22.390 [main] INFO  - Entering email and password.. 
+22:21:12.939 [main] INFO  - Entering Last name.. 
+22:25:18.639 [main] INFO  - Goto my account-->Click on Login.. 
+22:25:18.688 [main] INFO  - Entering email and password.. 
+22:26:06.097 [main] INFO  - Entering Last name.. 
+22:26:33.273 [main] INFO  - Goto my account-->Click on Login.. 
+22:26:33.273 [main] INFO  - Entering email and password.. 
+22:27:08.331 [main] INFO  - Entering Last name.. 
+22:27:11.742 [main] INFO  - Entering First name.. 
+22:27:11.902 [main] INFO  - Entering Zipcode.. 
+22:27:25.382 [main] INFO  - Entering ReferralId.. 
+22:27:36.718 [main] INFO  - Entering PayorName.. 
+22:28:12.393 [main] INFO  - Entering DOB.. 
+22:28:22.701 [main] INFO  - Entering primaryPhone.. 
+22:28:28.180 [main] INFO  - Entering streetAddress.. 
+22:28:28.405 [main] INFO  - Entering streetAddress.. 
+22:29:21.534 [main] INFO  - Entering ACISPatientID.. 
+22:29:21.758 [main] INFO  - Entering BranchUser.. 
+22:29:21.940 [main] INFO  - Entering Intake.. 
+22:29:35.392 [main] INFO  - Goto my account-->Click on Login.. 
+22:29:35.392 [main] INFO  - Entering email and password.. 
+13:49:06.279 [main] INFO  - Goto my account-->Click on Login.. 
+13:49:06.318 [main] INFO  - Entering email and password.. 
+13:49:41.970 [main] INFO  - Entering Last name.. 
+14:04:55.364 [main] INFO  - Goto my account-->Click on Login.. 
+14:04:55.398 [main] INFO  - Entering email and password.. 
+14:05:03.516 [main] INFO  - Entering Last name.. 
+14:05:04.580 [main] INFO  - Entering First name.. 
+14:05:04.687 [main] INFO  - Entering Zipcode.. 
+14:05:14.833 [main] INFO  - Entering ReferralId.. 
+14:05:24.114 [main] INFO  - Entering PayorName.. 
+14:05:50.678 [main] INFO  - Entering DOB.. 
+14:06:00.866 [main] INFO  - Entering primaryPhone.. 
+14:06:06.178 [main] INFO  - Entering streetAddress.. 
+14:06:06.302 [main] INFO  - Entering streetAddress.. 
+14:07:04.646 [main] INFO  - Goto my account-->Click on Login.. 
+14:07:04.649 [main] INFO  - Entering email and password.. 
+14:07:26.970 [main] INFO  - Entering Last name.. 
+14:07:52.510 [main] INFO  - Goto my account-->Click on Login.. 
+14:07:52.517 [main] INFO  - Entering email and password.. 
+14:08:26.046 [main] INFO  - Entering Last name.. 
+14:08:27.340 [main] INFO  - Entering First name.. 
+14:08:27.423 [main] INFO  - Entering Zipcode.. 
+14:08:37.821 [main] INFO  - Entering ReferralId.. 
+14:08:47.187 [main] INFO  - Entering PayorName.. 
+14:09:14.140 [main] INFO  - Entering DOB.. 
+14:09:24.334 [main] INFO  - Entering primaryPhone.. 
+14:09:29.638 [main] INFO  - Entering streetAddress.. 
+14:09:29.759 [main] INFO  - Entering streetAddress.. 
+14:10:22.289 [main] INFO  - Entering ACISPatientID.. 
+14:10:22.414 [main] INFO  - Entering BranchUser.. 
+14:10:22.500 [main] INFO  - Entering Intake.. 
+14:11:17.971 [main] INFO  - Entering GroupNumber.. 
+14:11:18.833 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+14:11:18.935 [main] INFO  - Entering DeductibleMax.. 
+14:11:19.032 [main] INFO  - Entering DeductibleMet.. 
+14:53:31.419 [main] INFO  - Goto my account-->Click on Login.. 
+14:53:31.450 [main] INFO  - Entering email and password.. 
+14:53:57.522 [main] INFO  - Entering Last name.. 
+14:56:23.310 [main] INFO  - Goto my account-->Click on Login.. 
+14:56:23.346 [main] INFO  - Entering email and password.. 
+14:56:32.823 [main] INFO  - Entering Last name.. 
+14:56:34.875 [main] INFO  - Entering First name.. 
+14:56:35.076 [main] INFO  - Entering Zipcode.. 
+14:56:45.440 [main] INFO  - Entering ReferralId.. 
+16:58:08.546 [main] INFO  - Goto my account-->Click on Login.. 
+16:58:08.579 [main] INFO  - Entering email and password.. 
+17:01:56.735 [main] INFO  - Goto my account-->Click on Login.. 
+17:01:56.760 [main] INFO  - Entering email and password.. 
+17:08:08.512 [main] INFO  - Goto my account-->Click on Login.. 
+17:08:08.544 [main] INFO  - Entering email and password.. 
+17:08:18.580 [main] INFO  - Entering Last name.. 
+17:08:19.900 [main] INFO  - Entering First name.. 
+17:08:20.100 [main] INFO  - Entering Zipcode.. 
+17:08:30.962 [main] INFO  - Entering ReferralId.. 
+17:08:41.288 [main] INFO  - Entering PayorName.. 
+17:09:09.560 [main] INFO  - Entering DOB.. 
+17:09:19.861 [main] INFO  - Entering primaryPhone.. 
+17:09:25.414 [main] INFO  - Entering streetAddress.. 
+17:09:25.656 [main] INFO  - Entering streetAddress.. 
+17:10:18.950 [main] INFO  - Entering ACISPatientID.. 
+17:10:19.226 [main] INFO  - Entering BranchUser.. 
+17:10:19.418 [main] INFO  - Entering Intake.. 
+17:11:15.982 [main] INFO  - Entering GroupNumber.. 
+17:11:16.496 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+17:11:16.652 [main] INFO  - Entering DeductibleMax.. 
+17:11:16.827 [main] INFO  - Entering DeductibleMet.. 
+17:26:48.604 [main] INFO  - Goto my account-->Click on Login.. 
+17:26:48.638 [main] INFO  - Entering email and password.. 
+17:27:03.058 [main] INFO  - Entering Last name.. 
+17:27:04.042 [main] INFO  - Entering First name.. 
+17:27:04.217 [main] INFO  - Entering Zipcode.. 
+17:27:14.838 [main] INFO  - Entering ReferralId.. 
+17:27:25.133 [main] INFO  - Entering PayorName.. 
+17:27:52.980 [main] INFO  - Entering DOB.. 
+17:28:03.308 [main] INFO  - Entering primaryPhone.. 
+17:28:08.963 [main] INFO  - Entering streetAddress.. 
+17:28:09.259 [main] INFO  - Entering streetAddress.. 
+17:29:02.446 [main] INFO  - Entering ACISPatientID.. 
+17:29:02.704 [main] INFO  - Entering BranchUser.. 
+17:29:02.913 [main] INFO  - Entering Intake.. 
+17:29:59.883 [main] INFO  - Entering GroupNumber.. 
+17:30:00.644 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+17:30:00.813 [main] INFO  - Entering DeductibleMax.. 
+17:30:00.981 [main] INFO  - Entering DeductibleMet.. 
+18:58:22.402 [main] INFO  - Goto my account-->Click on Login.. 
+18:58:22.506 [main] INFO  - Entering email and password.. 
+18:58:32.528 [main] INFO  - Entering Last name.. 
+12:50:11.418 [main] INFO  - Goto my account-->Click on Login.. 
+12:50:11.449 [main] INFO  - Entering email and password.. 
+12:50:50.297 [main] INFO  - Entering Last name.. 
+12:50:51.057 [main] INFO  - Entering First name.. 
+12:50:51.144 [main] INFO  - Entering Zipcode.. 
+12:51:01.187 [main] INFO  - Entering ReferralId.. 
+12:51:10.412 [main] INFO  - Entering PayorName.. 
+12:51:36.894 [main] INFO  - Entering DOB.. 
+12:51:47.078 [main] INFO  - Entering primaryPhone.. 
+12:51:52.341 [main] INFO  - Entering streetAddress.. 
+12:51:52.458 [main] INFO  - Entering streetAddress.. 
+12:52:45.003 [main] INFO  - Entering ACISPatientID.. 
+12:52:45.139 [main] INFO  - Entering BranchUser.. 
+12:52:45.282 [main] INFO  - Entering Intake.. 
+12:53:41.196 [main] INFO  - Entering GroupNumber.. 
+12:53:41.444 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+12:53:41.550 [main] INFO  - Entering DeductibleMax.. 
+12:53:41.662 [main] INFO  - Entering DeductibleMet.. 
+14:16:05.048 [main] INFO  - Goto my account-->Click on Login.. 
+14:16:05.085 [main] INFO  - Entering email and password.. 
+14:16:40.811 [main] INFO  - Entering Last name.. 
+14:16:41.918 [main] INFO  - Entering First name.. 
+14:16:42.081 [main] INFO  - Entering Zipcode.. 
+14:16:52.261 [main] INFO  - Entering ReferralId.. 
+14:17:01.775 [main] INFO  - Entering PayorName.. 
+14:17:28.605 [main] INFO  - Entering DOB.. 
+14:17:38.770 [main] INFO  - Entering primaryPhone.. 
+14:17:44.070 [main] INFO  - Entering streetAddress.. 
+14:17:44.196 [main] INFO  - Entering streetAddress.. 
+14:18:36.721 [main] INFO  - Entering ACISPatientID.. 
+14:18:36.851 [main] INFO  - Entering BranchUser.. 
+14:18:36.946 [main] INFO  - Entering Intake.. 
+14:19:32.381 [main] INFO  - Entering GroupNumber.. 
+14:19:32.637 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+14:19:32.726 [main] INFO  - Entering DeductibleMax.. 
+14:19:32.816 [main] INFO  - Entering DeductibleMet.. 
+16:43:41.147 [main] INFO  - Goto my account-->Click on Login.. 
+16:43:41.202 [main] INFO  - Entering email and password.. 
+16:44:06.390 [main] INFO  - Entering Last name.. 
+17:43:25.329 [main] INFO  - Goto my account-->Click on Login.. 
+17:43:25.362 [main] INFO  - Entering email and password.. 
+17:43:34.536 [main] INFO  - Entering Last name.. 
+17:43:36.295 [main] INFO  - Entering First name.. 
+17:43:36.495 [main] INFO  - Entering Zipcode.. 
+17:43:47.909 [main] INFO  - Entering ReferralId.. 
+17:44:24.463 [main] INFO  - Goto my account-->Click on Login.. 
+17:44:24.498 [main] INFO  - Entering email and password.. 
+17:45:15.157 [main] INFO  - Entering Last name.. 
+17:46:10.395 [main] INFO  - Goto my account-->Click on Login.. 
+17:46:10.424 [main] INFO  - Entering email and password.. 
+17:46:32.358 [main] INFO  - Entering Last name.. 
+17:46:33.944 [main] INFO  - Entering First name.. 
+17:46:34.088 [main] INFO  - Entering Zipcode.. 
+17:46:44.472 [main] INFO  - Entering ReferralId.. 
+17:46:56.511 [main] INFO  - Entering PayorName.. 
+17:47:25.906 [main] INFO  - Entering DOB.. 
+17:47:36.219 [main] INFO  - Entering primaryPhone.. 
+17:47:41.784 [main] INFO  - Entering streetAddress.. 
+17:47:42.009 [main] INFO  - Entering streetAddress.. 
+17:48:35.018 [main] INFO  - Entering ACISPatientID.. 
+17:48:35.239 [main] INFO  - Entering BranchUser.. 
+17:48:35.405 [main] INFO  - Entering Intake.. 
+17:49:32.185 [main] INFO  - Entering GroupNumber.. 
+17:49:32.575 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+17:49:32.744 [main] INFO  - Entering DeductibleMax.. 
+17:49:32.927 [main] INFO  - Entering DeductibleMet.. 
+17:49:50.551 [main] INFO  - Entering ICDCode.. 
+17:55:28.886 [main] INFO  - Goto my account-->Click on Login.. 
+17:55:28.919 [main] INFO  - Entering email and password.. 
+17:56:28.479 [main] INFO  - Goto my account-->Click on Login.. 
+17:56:28.503 [main] INFO  - Entering email and password.. 
+17:56:49.915 [main] INFO  - Entering Last name.. 
+17:56:51.296 [main] INFO  - Entering First name.. 
+17:56:51.473 [main] INFO  - Entering Zipcode.. 
+17:57:02.160 [main] INFO  - Entering ReferralId.. 
+17:57:12.993 [main] INFO  - Entering PayorName.. 
+17:57:40.884 [main] INFO  - Entering DOB.. 
+17:57:51.199 [main] INFO  - Entering primaryPhone.. 
+17:57:56.704 [main] INFO  - Entering streetAddress.. 
+17:57:56.937 [main] INFO  - Entering streetAddress.. 
+17:58:50.197 [main] INFO  - Entering ACISPatientID.. 
+17:58:50.434 [main] INFO  - Entering BranchUser.. 
+17:58:50.640 [main] INFO  - Entering Intake.. 
+17:59:47.116 [main] INFO  - Entering GroupNumber.. 
+17:59:47.487 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+17:59:47.640 [main] INFO  - Entering DeductibleMax.. 
+17:59:47.809 [main] INFO  - Entering DeductibleMet.. 
+18:00:05.481 [main] INFO  - Entering ICDCode.. 
+18:00:09.370 [main] INFO  - Entering PhysicianName.. 
+18:15:59.924 [main] INFO  - Goto my account-->Click on Login.. 
+18:15:59.949 [main] INFO  - Entering email and password.. 
+18:16:23.675 [main] INFO  - Entering Last name.. 
+18:16:24.830 [main] INFO  - Entering First name.. 
+18:16:24.964 [main] INFO  - Entering Zipcode.. 
+18:17:03.714 [main] INFO  - Entering ReferralId.. 
+18:17:13.917 [main] INFO  - Entering PayorName.. 
+18:17:42.031 [main] INFO  - Entering DOB.. 
+18:17:52.303 [main] INFO  - Entering primaryPhone.. 
+18:17:57.883 [main] INFO  - Entering streetAddress.. 
+18:17:58.158 [main] INFO  - Entering streetAddress.. 
+18:18:51.268 [main] INFO  - Entering ACISPatientID.. 
+18:18:51.469 [main] INFO  - Entering BranchUser.. 
+18:18:51.646 [main] INFO  - Entering Intake.. 
+18:19:48.211 [main] INFO  - Entering GroupNumber.. 
+18:19:48.616 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+18:19:48.744 [main] INFO  - Entering DeductibleMax.. 
+18:19:48.891 [main] INFO  - Entering DeductibleMet.. 
+18:20:06.504 [main] INFO  - Entering ICDCode.. 
+18:20:16.054 [main] INFO  - Entering PhysicianName.. 
+18:34:24.067 [main] INFO  - Goto my account-->Click on Login.. 
+18:34:24.105 [main] INFO  - Entering email and password.. 
+18:34:48.799 [main] INFO  - Entering Last name.. 
+18:34:49.905 [main] INFO  - Entering First name.. 
+18:34:50.080 [main] INFO  - Entering Zipcode.. 
+18:35:00.582 [main] INFO  - Entering ReferralId.. 
+18:35:11.090 [main] INFO  - Entering PayorName.. 
+18:35:47.659 [main] INFO  - Entering DOB.. 
+18:35:57.992 [main] INFO  - Entering primaryPhone.. 
+18:36:03.339 [main] INFO  - Entering streetAddress.. 
+18:36:03.565 [main] INFO  - Entering streetAddress.. 
+18:36:56.524 [main] INFO  - Entering ACISPatientID.. 
+18:36:56.739 [main] INFO  - Entering BranchUser.. 
+18:36:56.924 [main] INFO  - Entering Intake.. 
+18:37:53.619 [main] INFO  - Entering GroupNumber.. 
+18:37:54.118 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+18:37:54.271 [main] INFO  - Entering DeductibleMax.. 
+18:37:54.446 [main] INFO  - Entering DeductibleMet.. 
+18:38:12.057 [main] INFO  - Entering ICDCode.. 
+18:38:20.662 [main] INFO  - Entering PhysicianName.. 
+19:09:09.500 [main] INFO  - Goto my account-->Click on Login.. 
+19:09:09.521 [main] INFO  - Entering email and password.. 
+19:09:34.688 [main] INFO  - Entering Last name.. 
+19:09:35.880 [main] INFO  - Entering First name.. 
+19:09:36.073 [main] INFO  - Entering Zipcode.. 
+19:09:45.963 [main] INFO  - Entering ReferralId.. 
+19:10:02.645 [main] INFO  - Goto my account-->Click on Login.. 
+19:10:02.652 [main] INFO  - Entering email and password.. 
+19:10:26.966 [main] INFO  - Entering Last name.. 
+19:10:53.704 [main] INFO  - Goto my account-->Click on Login.. 
+19:10:53.706 [main] INFO  - Entering email and password.. 
+19:11:26.116 [main] INFO  - Entering Last name.. 
+19:11:27.536 [main] INFO  - Entering First name.. 
+19:11:27.781 [main] INFO  - Entering Zipcode.. 
+19:11:37.636 [main] INFO  - Entering ReferralId.. 
+19:11:48.843 [main] INFO  - Entering PayorName.. 
+19:12:18.468 [main] INFO  - Entering DOB.. 
+19:12:28.896 [main] INFO  - Entering primaryPhone.. 
+19:12:34.448 [main] INFO  - Entering streetAddress.. 
+19:12:34.669 [main] INFO  - Entering streetAddress.. 
+19:13:27.831 [main] INFO  - Entering ACISPatientID.. 
+19:13:28.057 [main] INFO  - Entering BranchUser.. 
+19:13:28.224 [main] INFO  - Entering Intake.. 
+19:14:24.763 [main] INFO  - Entering GroupNumber.. 
+19:14:25.221 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+19:14:25.375 [main] INFO  - Entering DeductibleMax.. 
+19:14:25.535 [main] INFO  - Entering DeductibleMet.. 
+19:14:43.258 [main] INFO  - Entering ICDCode.. 
+19:14:52.778 [main] INFO  - Entering PhysicianName.. 
+19:17:14.670 [main] INFO  - Goto my account-->Click on Login.. 
+19:17:14.699 [main] INFO  - Entering email and password.. 
+19:17:30.114 [main] INFO  - Entering Last name.. 
+19:17:31.108 [main] INFO  - Entering First name.. 
+19:17:31.270 [main] INFO  - Entering Zipcode.. 
+19:17:40.494 [main] INFO  - Entering ReferralId.. 
+19:17:50.948 [main] INFO  - Entering PayorName.. 
+19:18:19.024 [main] INFO  - Entering DOB.. 
+19:18:29.333 [main] INFO  - Entering primaryPhone.. 
+19:18:34.989 [main] INFO  - Entering streetAddress.. 
+19:18:35.262 [main] INFO  - Entering streetAddress.. 
+19:19:35.345 [main] INFO  - Goto my account-->Click on Login.. 
+19:19:35.349 [main] INFO  - Entering email and password.. 
+19:20:20.524 [main] INFO  - Entering Last name.. 
+19:20:47.293 [main] INFO  - Goto my account-->Click on Login.. 
+19:20:47.296 [main] INFO  - Entering email and password.. 
+19:20:57.074 [main] INFO  - Entering Last name.. 
+19:20:58.346 [main] INFO  - Entering First name.. 
+19:20:58.515 [main] INFO  - Entering Zipcode.. 
+19:21:09.957 [main] INFO  - Entering ReferralId.. 
+19:21:20.673 [main] INFO  - Entering PayorName.. 
+19:21:48.901 [main] INFO  - Entering DOB.. 
+19:21:59.223 [main] INFO  - Entering primaryPhone.. 
+19:22:04.811 [main] INFO  - Entering streetAddress.. 
+19:22:05.038 [main] INFO  - Entering streetAddress.. 
+19:22:58.015 [main] INFO  - Entering ACISPatientID.. 
+19:22:58.290 [main] INFO  - Entering BranchUser.. 
+19:22:58.475 [main] INFO  - Entering Intake.. 
+19:23:54.937 [main] INFO  - Entering GroupNumber.. 
+19:23:56.063 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+19:23:56.208 [main] INFO  - Entering DeductibleMax.. 
+19:23:56.354 [main] INFO  - Entering DeductibleMet.. 
+19:24:14.188 [main] INFO  - Entering ICDCode.. 
+19:24:23.924 [main] INFO  - Entering PhysicianName.. 
+21:26:57.106 [main] INFO  - Goto my account-->Click on Login.. 
+21:26:57.161 [main] INFO  - Entering email and password.. 
+21:27:06.922 [main] INFO  - Entering Last name.. 
+21:27:08.504 [main] INFO  - Entering First name.. 
+21:27:08.649 [main] INFO  - Entering Zipcode.. 
+21:27:27.850 [main] INFO  - Entering ReferralId.. 
+21:27:38.696 [main] INFO  - Entering PayorName.. 
+21:28:08.334 [main] INFO  - Entering DOB.. 
+21:28:18.629 [main] INFO  - Entering primaryPhone.. 
+21:28:24.195 [main] INFO  - Entering streetAddress.. 
+21:28:24.507 [main] INFO  - Entering streetAddress.. 
+21:29:35.299 [main] INFO  - Goto my account-->Click on Login.. 
+21:29:35.302 [main] INFO  - Entering email and password.. 
+21:29:44.822 [main] INFO  - Entering Last name.. 
+21:30:11.999 [main] INFO  - Goto my account-->Click on Login.. 
+21:30:12.002 [main] INFO  - Entering email and password.. 
+21:30:21.338 [main] INFO  - Entering Last name.. 
+12:06:49.191 [main] INFO  - Goto my account-->Click on Login.. 
+12:06:49.271 [main] INFO  - Entering email and password.. 
+12:06:59.248 [main] INFO  - Entering Last name.. 
+12:07:27.108 [main] INFO  - Goto my account-->Click on Login.. 
+12:07:27.115 [main] INFO  - Entering email and password.. 
+12:08:06.740 [main] INFO  - Entering Last name.. 
+12:08:08.183 [main] INFO  - Entering First name.. 
+12:08:08.387 [main] INFO  - Entering Zipcode.. 
+12:08:23.106 [main] INFO  - Entering ReferralId.. 
+12:08:40.551 [main] INFO  - Goto my account-->Click on Login.. 
+12:08:40.555 [main] INFO  - Entering email and password.. 
+12:09:02.466 [main] INFO  - Entering Last name.. 
+12:09:04.125 [main] INFO  - Entering First name.. 
+12:09:04.350 [main] INFO  - Entering Zipcode.. 
+12:09:14.594 [main] INFO  - Entering ReferralId.. 
+12:11:30.386 [main] INFO  - Goto my account-->Click on Login.. 
+12:11:30.470 [main] INFO  - Entering email and password.. 
+12:11:41.129 [main] INFO  - Entering Last name.. 
+12:11:42.961 [main] INFO  - Entering First name.. 
+12:11:43.200 [main] INFO  - Entering Zipcode.. 
+12:11:52.959 [main] INFO  - Entering ReferralId.. 
+12:12:24.744 [main] INFO  - Goto my account-->Click on Login.. 
+12:12:24.807 [main] INFO  - Entering email and password.. 
+12:12:52.970 [main] INFO  - Entering Last name.. 
+12:12:54.285 [main] INFO  - Entering First name.. 
+12:12:54.532 [main] INFO  - Entering Zipcode.. 
+12:13:04.710 [main] INFO  - Entering ReferralId.. 
+12:13:22.236 [main] INFO  - Goto my account-->Click on Login.. 
+12:13:22.241 [main] INFO  - Entering email and password.. 
+12:13:45.641 [main] INFO  - Entering Last name.. 
+12:13:46.953 [main] INFO  - Entering First name.. 
+12:13:47.193 [main] INFO  - Entering Zipcode.. 
+12:13:56.918 [main] INFO  - Entering ReferralId.. 
+12:14:14.378 [main] INFO  - Goto my account-->Click on Login.. 
+12:14:14.382 [main] INFO  - Entering email and password.. 
+12:14:39.850 [main] INFO  - Entering Last name.. 
+12:17:02.723 [main] INFO  - Goto my account-->Click on Login.. 
+12:17:02.783 [main] INFO  - Entering email and password.. 
+12:17:28.826 [main] INFO  - Entering Last name.. 
+12:17:30.340 [main] INFO  - Entering First name.. 
+12:17:30.556 [main] INFO  - Entering Zipcode.. 
+12:17:43.912 [main] INFO  - Entering ReferralId.. 
+12:18:41.907 [main] INFO  - Goto my account-->Click on Login.. 
+12:18:41.972 [main] INFO  - Entering email and password.. 
+12:19:10.971 [main] INFO  - Entering Last name.. 
+12:19:12.306 [main] INFO  - Entering First name.. 
+12:19:12.535 [main] INFO  - Entering Zipcode.. 
+12:19:22.127 [main] INFO  - Entering ReferralId.. 
+12:37:55.707 [main] INFO  - Goto my account-->Click on Login.. 
+12:37:55.738 [main] INFO  - Entering email and password.. 
+12:38:09.376 [main] INFO  - Entering Last name.. 
+12:38:10.083 [main] INFO  - Entering First name.. 
+12:38:10.169 [main] INFO  - Entering Zipcode.. 
+12:38:20.265 [main] INFO  - Entering ReferralId.. 
+12:38:29.995 [main] INFO  - Entering PayorName.. 
+12:38:56.485 [main] INFO  - Entering DOB.. 
+12:39:06.649 [main] INFO  - Entering primaryPhone.. 
+12:39:11.955 [main] INFO  - Entering streetAddress.. 
+12:39:12.086 [main] INFO  - Entering streetAddress.. 
+12:40:04.516 [main] INFO  - Entering ACISPatientID.. 
+12:40:04.621 [main] INFO  - Entering BranchUser.. 
+12:40:04.732 [main] INFO  - Entering Intake.. 
+12:41:00.071 [main] INFO  - Entering GroupNumber.. 
+12:41:00.302 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+12:41:00.388 [main] INFO  - Entering DeductibleMax.. 
+12:41:00.498 [main] INFO  - Entering DeductibleMet.. 
+12:41:17.694 [main] INFO  - Entering ICDCode.. 
+12:41:26.222 [main] INFO  - Entering PhysicianName.. 
+12:49:09.643 [main] INFO  - Goto my account-->Click on Login.. 
+12:49:09.678 [main] INFO  - Entering email and password.. 
+12:49:40.468 [main] INFO  - Entering Last name.. 
+12:49:41.309 [main] INFO  - Entering First name.. 
+12:49:41.393 [main] INFO  - Entering Zipcode.. 
+12:49:55.412 [main] INFO  - Goto my account-->Click on Login.. 
+12:49:55.415 [main] INFO  - Entering email and password.. 
+12:50:10.687 [main] INFO  - Entering Last name.. 
+12:50:11.377 [main] INFO  - Entering First name.. 
+12:50:11.451 [main] INFO  - Entering Zipcode.. 
+12:50:20.631 [main] INFO  - Entering ReferralId.. 
+12:50:29.756 [main] INFO  - Entering PayorName.. 
+12:50:56.159 [main] INFO  - Entering DOB.. 
+12:51:06.322 [main] INFO  - Entering primaryPhone.. 
+12:51:11.597 [main] INFO  - Entering streetAddress.. 
+12:51:11.756 [main] INFO  - Entering streetAddress.. 
+12:52:03.998 [main] INFO  - Entering ACISPatientID.. 
+12:52:04.105 [main] INFO  - Entering BranchUser.. 
+12:52:04.191 [main] INFO  - Entering Intake.. 
+12:52:15.041 [main] INFO  - Goto my account-->Click on Login.. 
+12:52:15.044 [main] INFO  - Entering email and password.. 
+12:52:27.598 [main] INFO  - Entering Last name.. 
+12:52:28.333 [main] INFO  - Entering First name.. 
+12:52:28.449 [main] INFO  - Entering Zipcode.. 
+12:52:38.004 [main] INFO  - Entering ReferralId.. 
+12:52:47.175 [main] INFO  - Entering PayorName.. 
+12:53:13.536 [main] INFO  - Entering DOB.. 
+12:53:23.682 [main] INFO  - Entering primaryPhone.. 
+12:53:28.940 [main] INFO  - Entering streetAddress.. 
+12:53:29.052 [main] INFO  - Entering streetAddress.. 
+12:54:21.495 [main] INFO  - Entering ACISPatientID.. 
+12:54:21.592 [main] INFO  - Entering BranchUser.. 
+12:54:21.694 [main] INFO  - Entering Intake.. 
+12:55:16.939 [main] INFO  - Entering GroupNumber.. 
+12:55:17.239 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+12:55:17.319 [main] INFO  - Entering DeductibleMax.. 
+12:55:17.417 [main] INFO  - Entering DeductibleMet.. 
+12:55:34.595 [main] INFO  - Entering ICDCode.. 
+12:55:42.971 [main] INFO  - Entering PhysicianName.. 
+12:57:06.995 [main] INFO  - Goto my account-->Click on Login.. 
+12:57:07.025 [main] INFO  - Entering email and password.. 
+12:57:26.812 [main] INFO  - Entering Last name.. 
+12:57:27.497 [main] INFO  - Entering First name.. 
+12:57:27.596 [main] INFO  - Entering Zipcode.. 
+12:57:42.127 [main] INFO  - Goto my account-->Click on Login.. 
+12:57:42.129 [main] INFO  - Entering email and password.. 
+12:58:05.553 [main] INFO  - Entering Last name.. 
+12:58:31.220 [main] INFO  - Goto my account-->Click on Login.. 
+12:58:31.223 [main] INFO  - Entering email and password.. 
+12:58:38.615 [main] INFO  - Entering Last name.. 
+12:58:39.588 [main] INFO  - Entering First name.. 
+12:58:39.681 [main] INFO  - Entering Zipcode.. 
+13:27:48.799 [main] INFO  - Goto my account-->Click on Login.. 
+13:27:48.833 [main] INFO  - Entering email and password.. 
+13:28:12.342 [main] INFO  - Entering Last name.. 
+13:28:13.006 [main] INFO  - Entering First name.. 
+13:28:13.107 [main] INFO  - Entering Zipcode.. 
+13:28:31.720 [main] INFO  - Entering ReferralId.. 
+13:28:40.078 [main] INFO  - Entering PayorName.. 
+13:29:06.586 [main] INFO  - Entering DOB.. 
+13:29:16.755 [main] INFO  - Entering primaryPhone.. 
+13:29:22.052 [main] INFO  - Entering streetAddress.. 
+13:29:22.170 [main] INFO  - Entering streetAddress.. 
+13:30:20.760 [main] INFO  - Goto my account-->Click on Login.. 
+13:30:20.763 [main] INFO  - Entering email and password.. 
+13:30:37.268 [main] INFO  - Entering Last name.. 
+13:30:39.314 [main] INFO  - Entering First name.. 
+13:30:39.413 [main] INFO  - Entering Zipcode.. 
+13:31:06.135 [main] INFO  - Entering ReferralId.. 
+13:31:14.516 [main] INFO  - Entering PayorName.. 
+13:31:41.616 [main] INFO  - Entering DOB.. 
+13:31:51.783 [main] INFO  - Entering primaryPhone.. 
+13:31:57.098 [main] INFO  - Entering streetAddress.. 
+13:31:57.228 [main] INFO  - Entering streetAddress.. 
+13:32:49.583 [main] INFO  - Entering ACISPatientID.. 
+13:32:49.705 [main] INFO  - Entering BranchUser.. 
+13:32:49.786 [main] INFO  - Entering Intake.. 
+13:33:00.599 [main] INFO  - Goto my account-->Click on Login.. 
+13:33:00.600 [main] INFO  - Entering email and password.. 
+13:33:19.814 [main] INFO  - Entering Last name.. 
+13:33:36.310 [main] INFO  - Entering First name.. 
+13:33:36.398 [main] INFO  - Entering Zipcode.. 
+13:33:55.481 [main] INFO  - Entering ReferralId.. 
+13:34:03.812 [main] INFO  - Entering PayorName.. 
+13:34:30.579 [main] INFO  - Entering DOB.. 
+13:34:40.728 [main] INFO  - Entering primaryPhone.. 
+13:34:45.978 [main] INFO  - Entering streetAddress.. 
+13:34:46.097 [main] INFO  - Entering streetAddress.. 
+13:35:38.494 [main] INFO  - Entering ACISPatientID.. 
+13:35:38.654 [main] INFO  - Entering BranchUser.. 
+13:35:38.767 [main] INFO  - Entering Intake.. 
+13:36:34.128 [main] INFO  - Entering GroupNumber.. 
+13:36:34.390 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+13:36:34.491 [main] INFO  - Entering DeductibleMax.. 
+13:36:34.593 [main] INFO  - Entering DeductibleMet.. 
+13:36:51.722 [main] INFO  - Entering ICDCode.. 
+13:37:00.127 [main] INFO  - Entering PhysicianName.. 
+13:40:34.564 [main] INFO  - Goto my account-->Click on Login.. 
+13:40:34.595 [main] INFO  - Entering email and password.. 
+13:41:12.577 [main] INFO  - Entering Last name.. 
+13:41:14.144 [main] INFO  - Entering First name.. 
+13:41:14.248 [main] INFO  - Entering Zipcode.. 
+13:41:36.907 [main] INFO  - Entering ReferralId.. 
+13:41:45.338 [main] INFO  - Entering PayorName.. 
+13:42:12.256 [main] INFO  - Entering DOB.. 
+13:42:22.408 [main] INFO  - Entering primaryPhone.. 
+13:42:27.692 [main] INFO  - Entering streetAddress.. 
+13:42:27.835 [main] INFO  - Entering streetAddress.. 
+13:43:20.202 [main] INFO  - Entering ACISPatientID.. 
+13:43:20.301 [main] INFO  - Entering BranchUser.. 
+13:43:20.406 [main] INFO  - Entering Intake.. 
+13:44:15.875 [main] INFO  - Entering GroupNumber.. 
+13:44:16.109 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+13:44:16.203 [main] INFO  - Entering DeductibleMax.. 
+13:44:16.303 [main] INFO  - Entering DeductibleMet.. 
+13:44:33.463 [main] INFO  - Entering ICDCode.. 
+13:44:41.838 [main] INFO  - Entering PhysicianName.. 
+14:47:21.876 [main] INFO  - Goto my account-->Click on Login.. 
+14:47:21.900 [main] INFO  - Entering email and password.. 
+14:47:43.972 [main] INFO  - Entering Last name.. 
+14:48:09.593 [main] INFO  - Goto my account-->Click on Login.. 
+14:48:09.597 [main] INFO  - Entering email and password.. 
+14:48:17.703 [main] INFO  - Entering Last name.. 
+14:48:18.683 [main] INFO  - Entering First name.. 
+14:48:18.785 [main] INFO  - Entering Zipcode.. 
+14:48:37.970 [main] INFO  - Entering ReferralId.. 
+14:48:46.279 [main] INFO  - Entering PayorName.. 
+14:49:12.714 [main] INFO  - Entering DOB.. 
+14:49:22.878 [main] INFO  - Entering primaryPhone.. 
+14:49:28.148 [main] INFO  - Entering streetAddress.. 
+14:49:28.265 [main] INFO  - Entering streetAddress.. 
+14:50:20.557 [main] INFO  - Entering ACISPatientID.. 
+14:50:20.685 [main] INFO  - Entering BranchUser.. 
+14:50:20.791 [main] INFO  - Entering Intake.. 
+14:50:31.459 [main] INFO  - Goto my account-->Click on Login.. 
+14:50:31.461 [main] INFO  - Entering email and password.. 
+14:50:49.605 [main] INFO  - Entering Last name.. 
+17:04:13.344 [main] INFO  - Goto my account-->Click on Login.. 
+17:04:13.372 [main] INFO  - Entering email and password.. 
+17:04:22.604 [main] INFO  - Entering Last name.. 
+17:05:28.999 [main] INFO  - Goto my account-->Click on Login.. 
+17:05:29.032 [main] INFO  - Entering email and password.. 
+17:05:37.855 [main] INFO  - Entering Last name.. 
+17:05:39.740 [main] INFO  - Entering First name.. 
+17:05:39.876 [main] INFO  - Entering Zipcode.. 
+17:06:01.824 [main] INFO  - Entering ReferralId.. 
+17:06:11.390 [main] INFO  - Entering PayorName.. 
+17:06:40.237 [main] INFO  - Entering DOB.. 
+17:06:50.564 [main] INFO  - Entering primaryPhone.. 
+17:06:56.162 [main] INFO  - Entering streetAddress.. 
+17:06:56.450 [main] INFO  - Entering streetAddress.. 
+17:07:49.436 [main] INFO  - Entering ACISPatientID.. 
+17:07:49.722 [main] INFO  - Entering BranchUser.. 
+17:07:49.897 [main] INFO  - Entering Intake.. 
+17:08:46.658 [main] INFO  - Entering GroupNumber.. 
+17:08:47.229 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+17:08:47.384 [main] INFO  - Entering DeductibleMax.. 
+17:08:47.547 [main] INFO  - Entering DeductibleMet.. 
+17:09:05.371 [main] INFO  - Entering ICDCode.. 
+17:09:14.860 [main] INFO  - Entering PhysicianName.. 
+17:09:33.139 [main] INFO  - Entering HCPC.. 
+17:09:33.416 [main] INFO  - Entering IfSupplyWhatIsbaseHCPC.. 
+17:20:27.724 [main] INFO  - Goto my account-->Click on Login.. 
+17:20:27.752 [main] INFO  - Entering email and password.. 
+17:20:37.843 [main] INFO  - Entering Last name.. 
+17:20:39.102 [main] INFO  - Entering First name.. 
+17:20:39.243 [main] INFO  - Entering Zipcode.. 
+17:20:59.576 [main] INFO  - Entering ReferralId.. 
+17:21:08.859 [main] INFO  - Entering PayorName.. 
+17:21:37.376 [main] INFO  - Entering DOB.. 
+17:21:47.700 [main] INFO  - Entering primaryPhone.. 
+17:21:53.204 [main] INFO  - Entering streetAddress.. 
+17:21:53.489 [main] INFO  - Entering streetAddress.. 
+17:22:46.391 [main] INFO  - Entering ACISPatientID.. 
+17:22:46.635 [main] INFO  - Entering BranchUser.. 
+17:22:46.878 [main] INFO  - Entering Intake.. 
+17:23:43.631 [main] INFO  - Entering GroupNumber.. 
+17:23:44.636 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+17:23:44.787 [main] INFO  - Entering DeductibleMax.. 
+17:23:44.959 [main] INFO  - Entering DeductibleMet.. 
+17:24:02.760 [main] INFO  - Entering ICDCode.. 
+17:24:12.388 [main] INFO  - Entering PhysicianName.. 
+17:24:30.708 [main] INFO  - Entering HCPC.. 
+17:24:30.927 [main] INFO  - Entering IfSupplyWhatIsbaseHCPC.. 
+18:02:18.915 [main] INFO  - Goto my account-->Click on Login.. 
+18:02:18.954 [main] INFO  - Entering email and password.. 
+18:02:28.481 [main] INFO  - Entering Last name.. 
+18:02:44.275 [main] INFO  - Entering First name.. 
+18:02:44.405 [main] INFO  - Entering Zipcode.. 
+18:03:05.798 [main] INFO  - Entering ReferralId.. 
+18:03:14.942 [main] INFO  - Entering PayorName.. 
+18:03:43.642 [main] INFO  - Entering DOB.. 
+18:03:53.974 [main] INFO  - Entering primaryPhone.. 
+18:03:59.553 [main] INFO  - Entering streetAddress.. 
+18:03:59.779 [main] INFO  - Entering streetAddress.. 
+18:04:52.768 [main] INFO  - Entering ACISPatientID.. 
+18:04:52.934 [main] INFO  - Entering BranchUser.. 
+18:04:53.089 [main] INFO  - Entering Intake.. 
+18:05:49.018 [main] INFO  - Entering GroupNumber.. 
+18:05:49.400 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+18:05:49.489 [main] INFO  - Entering DeductibleMax.. 
+18:05:49.586 [main] INFO  - Entering DeductibleMet.. 
+18:06:06.815 [main] INFO  - Entering ICDCode.. 
+18:06:15.792 [main] INFO  - Entering PhysicianName.. 
+18:06:33.829 [main] INFO  - Entering HCPC.. 
+18:06:34.022 [main] INFO  - Entering IfSupplyWhatIsbaseHCPC.. 
+19:05:32.072 [main] INFO  - Goto my account-->Click on Login.. 
+19:05:32.103 [main] INFO  - Entering email and password.. 
+19:05:54.580 [main] INFO  - Entering Last name.. 
+19:05:56.370 [main] INFO  - Entering First name.. 
+19:05:56.542 [main] INFO  - Entering Zipcode.. 
+19:06:18.146 [main] INFO  - Entering ReferralId.. 
+19:06:27.671 [main] INFO  - Entering PayorName.. 
+19:06:56.888 [main] INFO  - Entering DOB.. 
+19:07:07.178 [main] INFO  - Entering primaryPhone.. 
+19:07:12.893 [main] INFO  - Entering streetAddress.. 
+19:07:13.152 [main] INFO  - Entering streetAddress.. 
+19:08:19.506 [main] INFO  - Goto my account-->Click on Login.. 
+19:08:19.541 [main] INFO  - Entering email and password.. 
+19:08:29.188 [main] INFO  - Entering Last name.. 
+19:09:12.546 [main] INFO  - Goto my account-->Click on Login.. 
+19:09:12.569 [main] INFO  - Entering email and password.. 
+19:09:37.392 [main] INFO  - Entering Last name.. 
+19:09:39.062 [main] INFO  - Entering First name.. 
+19:09:39.253 [main] INFO  - Entering Zipcode.. 
+19:10:00.775 [main] INFO  - Entering ReferralId.. 
+19:10:10.145 [main] INFO  - Entering PayorName.. 
+19:12:41.881 [main] INFO  - Goto my account-->Click on Login.. 
+19:12:41.922 [main] INFO  - Entering email and password.. 
+19:12:51.439 [main] INFO  - Entering Last name.. 
+19:14:31.060 [main] INFO  - Goto my account-->Click on Login.. 
+19:14:31.084 [main] INFO  - Entering email and password.. 
+19:14:40.428 [main] INFO  - Entering Last name.. 
+19:31:42.939 [main] INFO  - Goto my account-->Click on Login.. 
+19:31:42.964 [main] INFO  - Entering email and password.. 
+19:32:16.217 [main] INFO  - Entering Last name.. 
+19:32:17.410 [main] INFO  - Entering First name.. 
+19:32:17.504 [main] INFO  - Entering Zipcode.. 
+19:32:37.762 [main] INFO  - Entering ReferralId.. 
+19:32:46.406 [main] INFO  - Entering PayorName.. 
+19:33:14.236 [main] INFO  - Entering DOB.. 
+19:33:24.389 [main] INFO  - Entering primaryPhone.. 
+19:33:29.666 [main] INFO  - Entering streetAddress.. 
+19:33:29.787 [main] INFO  - Entering streetAddress.. 
+19:34:22.075 [main] INFO  - Entering ACISPatientID.. 
+19:34:22.190 [main] INFO  - Entering BranchUser.. 
+19:34:22.313 [main] INFO  - Entering Intake.. 
+19:37:24.315 [main] INFO  - Goto my account-->Click on Login.. 
+19:37:24.339 [main] INFO  - Entering email and password.. 
+19:37:32.972 [main] INFO  - Entering Last name.. 
+19:38:17.188 [main] INFO  - Goto my account-->Click on Login.. 
+19:38:17.214 [main] INFO  - Entering email and password.. 
+19:38:41.267 [main] INFO  - Entering Last name.. 
+19:38:42.208 [main] INFO  - Entering First name.. 
+19:38:42.302 [main] INFO  - Entering Zipcode.. 
+19:39:01.938 [main] INFO  - Entering ReferralId.. 
+19:39:10.397 [main] INFO  - Entering PayorName.. 
+19:39:37.767 [main] INFO  - Entering DOB.. 
+19:39:47.922 [main] INFO  - Entering primaryPhone.. 
+19:39:53.203 [main] INFO  - Entering streetAddress.. 
+19:39:53.334 [main] INFO  - Entering streetAddress.. 
+19:40:45.689 [main] INFO  - Entering ACISPatientID.. 
+19:40:45.800 [main] INFO  - Entering BranchUser.. 
+19:40:45.906 [main] INFO  - Entering Intake.. 
+19:41:46.286 [main] INFO  - Entering GroupNumber.. 
+19:41:46.409 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+19:41:46.497 [main] INFO  - Entering DeductibleMax.. 
+19:41:46.589 [main] INFO  - Entering DeductibleMet.. 
+20:51:36.623 [main] INFO  - Goto my account-->Click on Login.. 
+20:51:36.649 [main] INFO  - Entering email and password.. 
+20:51:49.548 [main] INFO  - Entering Last name.. 
+20:51:50.312 [main] INFO  - Entering First name.. 
+20:51:50.403 [main] INFO  - Entering Zipcode.. 
+20:52:08.810 [main] INFO  - Entering ReferralId.. 
+20:52:17.169 [main] INFO  - Entering PayorName.. 
+20:52:43.729 [main] INFO  - Entering DOB.. 
+20:52:53.900 [main] INFO  - Entering primaryPhone.. 
+20:52:59.196 [main] INFO  - Entering streetAddress.. 
+20:52:59.329 [main] INFO  - Entering streetAddress.. 
+20:53:51.706 [main] INFO  - Entering ACISPatientID.. 
+20:53:51.818 [main] INFO  - Entering BranchUser.. 
+20:53:51.997 [main] INFO  - Entering Intake.. 
+21:27:37.474 [main] INFO  - Goto my account-->Click on Login.. 
+21:27:37.498 [main] INFO  - Entering email and password.. 
+21:27:46.831 [main] INFO  - Entering Last name.. 
+21:28:03.233 [main] INFO  - Entering First name.. 
+21:28:03.460 [main] INFO  - Entering Zipcode.. 
+21:28:22.952 [main] INFO  - Entering ReferralId.. 
+21:28:31.965 [main] INFO  - Entering PayorName.. 
+21:29:01.061 [main] INFO  - Entering DOB.. 
+21:29:11.414 [main] INFO  - Entering primaryPhone.. 
+21:29:16.881 [main] INFO  - Entering streetAddress.. 
+21:29:17.089 [main] INFO  - Entering streetAddress.. 
+21:30:10.242 [main] INFO  - Entering ACISPatientID.. 
+21:30:10.446 [main] INFO  - Entering BranchUser.. 
+21:30:10.626 [main] INFO  - Entering Intake.. 
+22:11:57.229 [main] INFO  - Goto my account-->Click on Login.. 
+22:11:57.251 [main] INFO  - Entering email and password.. 
+22:12:06.416 [main] INFO  - Entering Last name.. 
+22:12:33.772 [main] INFO  - Goto my account-->Click on Login.. 
+22:12:33.774 [main] INFO  - Entering email and password.. 
+22:12:43.788 [main] INFO  - Entering Last name.. 
+22:12:45.300 [main] INFO  - Entering First name.. 
+22:12:45.436 [main] INFO  - Entering Zipcode.. 
+22:13:07.393 [main] INFO  - Entering ReferralId.. 
+22:13:17.062 [main] INFO  - Entering PayorName.. 
+22:13:45.381 [main] INFO  - Entering DOB.. 
+22:13:55.657 [main] INFO  - Entering primaryPhone.. 
+22:14:01.212 [main] INFO  - Entering streetAddress.. 
+22:14:01.485 [main] INFO  - Entering streetAddress.. 
+22:14:54.698 [main] INFO  - Entering ACISPatientID.. 
+22:14:55.002 [main] INFO  - Entering BranchUser.. 
+22:14:55.195 [main] INFO  - Entering Intake.. 
+22:15:08.128 [main] INFO  - Goto my account-->Click on Login.. 
+22:15:08.130 [main] INFO  - Entering email and password.. 
+22:15:33.261 [main] INFO  - Entering Last name.. 
+13:11:13.355 [main] INFO  - Goto my account-->Click on Login.. 
+13:11:13.386 [main] INFO  - Entering email and password.. 
+13:11:55.572 [main] INFO  - Entering Last name.. 
+13:11:58.476 [main] INFO  - Entering First name.. 
+13:11:58.629 [main] INFO  - Entering Zipcode.. 
+13:12:23.744 [main] INFO  - Entering ReferralId.. 
+13:12:32.712 [main] INFO  - Entering PayorName.. 
+13:13:00.382 [main] INFO  - Entering DOB.. 
+13:13:10.651 [main] INFO  - Entering primaryPhone.. 
+13:13:16.172 [main] INFO  - Entering streetAddress.. 
+13:13:16.452 [main] INFO  - Entering streetAddress.. 
+13:14:25.664 [main] INFO  - Goto my account-->Click on Login.. 
+13:14:25.664 [main] INFO  - Entering email and password.. 
+13:14:45.530 [main] INFO  - Entering Last name.. 
+13:15:00.168 [main] INFO  - Entering First name.. 
+13:15:00.387 [main] INFO  - Entering Zipcode.. 
+13:15:20.854 [main] INFO  - Entering ReferralId.. 
+13:15:30.658 [main] INFO  - Entering PayorName.. 
+13:15:58.489 [main] INFO  - Entering DOB.. 
+13:16:08.871 [main] INFO  - Entering primaryPhone.. 
+13:16:14.407 [main] INFO  - Entering streetAddress.. 
+13:16:14.700 [main] INFO  - Entering streetAddress.. 
+13:17:07.752 [main] INFO  - Entering ACISPatientID.. 
+13:17:07.984 [main] INFO  - Entering BranchUser.. 
+13:17:08.157 [main] INFO  - Entering Intake.. 
+13:17:20.612 [main] INFO  - Goto my account-->Click on Login.. 
+13:17:20.615 [main] INFO  - Entering email and password.. 
+13:17:32.536 [main] INFO  - Entering Last name.. 
+13:17:33.396 [main] INFO  - Entering First name.. 
+13:17:33.689 [main] INFO  - Entering Zipcode.. 
+13:17:54.398 [main] INFO  - Entering ReferralId.. 
+13:18:03.535 [main] INFO  - Entering PayorName.. 
+13:18:31.259 [main] INFO  - Entering DOB.. 
+13:18:41.544 [main] INFO  - Entering primaryPhone.. 
+13:18:47.047 [main] INFO  - Entering streetAddress.. 
+13:18:47.313 [main] INFO  - Entering streetAddress.. 
+13:19:40.416 [main] INFO  - Entering ACISPatientID.. 
+13:19:40.651 [main] INFO  - Entering BranchUser.. 
+13:19:40.823 [main] INFO  - Entering Intake.. 
+13:20:42.561 [main] INFO  - Entering GroupNumber.. 
+13:20:42.767 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+13:20:42.920 [main] INFO  - Entering DeductibleMax.. 
+13:20:43.071 [main] INFO  - Entering DeductibleMet.. 
+13:41:39.347 [main] INFO  - Goto my account-->Click on Login.. 
+13:41:39.375 [main] INFO  - Entering email and password.. 
+13:42:26.070 [main] INFO  - Entering Last name.. 
+13:42:30.343 [main] INFO  - Entering First name.. 
+13:42:30.543 [main] INFO  - Entering Zipcode.. 
+13:42:50.702 [main] INFO  - Entering ReferralId.. 
+13:42:59.720 [main] INFO  - Entering PayorName.. 
+13:43:28.041 [main] INFO  - Entering DOB.. 
+13:43:38.360 [main] INFO  - Entering primaryPhone.. 
+13:43:43.904 [main] INFO  - Entering streetAddress.. 
+13:43:44.184 [main] INFO  - Entering streetAddress.. 
+13:44:37.464 [main] INFO  - Entering ACISPatientID.. 
+13:44:37.650 [main] INFO  - Entering BranchUser.. 
+13:44:37.810 [main] INFO  - Entering Intake.. 
+13:45:39.434 [main] INFO  - Entering GroupNumber.. 
+13:45:39.692 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+13:45:39.843 [main] INFO  - Entering DeductibleMax.. 
+13:45:40.001 [main] INFO  - Entering DeductibleMet.. 
+13:50:37.183 [main] INFO  - Goto my account-->Click on Login.. 
+13:50:37.209 [main] INFO  - Entering email and password.. 
+13:50:58.934 [main] INFO  - Entering Last name.. 
+13:51:00.092 [main] INFO  - Entering First name.. 
+13:51:00.262 [main] INFO  - Entering Zipcode.. 
+13:51:20.025 [main] INFO  - Entering ReferralId.. 
+13:51:28.745 [main] INFO  - Entering PayorName.. 
+13:52:40.761 [main] INFO  - Goto my account-->Click on Login.. 
+13:52:40.790 [main] INFO  - Entering email and password.. 
+13:53:24.710 [main] INFO  - Entering Last name.. 
+13:53:28.317 [main] INFO  - Entering First name.. 
+13:53:28.520 [main] INFO  - Entering Zipcode.. 
+13:53:47.953 [main] INFO  - Entering ReferralId.. 
+13:53:57.037 [main] INFO  - Entering PayorName.. 
+13:54:24.631 [main] INFO  - Entering DOB.. 
+13:54:34.954 [main] INFO  - Entering primaryPhone.. 
+13:54:40.431 [main] INFO  - Entering streetAddress.. 
+13:54:40.707 [main] INFO  - Entering streetAddress.. 
+13:55:33.790 [main] INFO  - Entering ACISPatientID.. 
+13:55:34.003 [main] INFO  - Entering BranchUser.. 
+13:55:34.173 [main] INFO  - Entering Intake.. 
+13:57:15.343 [main] INFO  - Entering GroupNumber.. 
+13:57:32.881 [main] INFO  - Goto my account-->Click on Login.. 
+13:57:32.909 [main] INFO  - Entering email and password.. 
+13:57:47.224 [main] INFO  - Entering Last name.. 
+13:57:48.304 [main] INFO  - Entering First name.. 
+13:57:48.410 [main] INFO  - Entering Zipcode.. 
+13:58:08.255 [main] INFO  - Entering ReferralId.. 
+13:58:16.909 [main] INFO  - Entering PayorName.. 
+13:58:43.865 [main] INFO  - Entering DOB.. 
+13:58:54.046 [main] INFO  - Entering primaryPhone.. 
+13:58:59.372 [main] INFO  - Entering streetAddress.. 
+13:58:59.515 [main] INFO  - Entering streetAddress.. 
+13:59:51.986 [main] INFO  - Entering ACISPatientID.. 
+13:59:52.109 [main] INFO  - Entering BranchUser.. 
+13:59:52.246 [main] INFO  - Entering Intake.. 
+14:00:52.878 [main] INFO  - Entering GroupNumber.. 
+14:00:53.007 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+14:00:53.116 [main] INFO  - Entering DeductibleMax.. 
+14:00:53.196 [main] INFO  - Entering DeductibleMet.. 
+14:48:01.620 [main] INFO  - Goto my account-->Click on Login.. 
+14:48:01.649 [main] INFO  - Entering email and password.. 
+14:48:20.255 [main] INFO  - Entering Last name.. 
+14:48:20.959 [main] INFO  - Entering First name.. 
+14:48:21.046 [main] INFO  - Entering Zipcode.. 
+14:48:39.551 [main] INFO  - Entering ReferralId.. 
+14:48:47.913 [main] INFO  - Entering PayorName.. 
+14:49:14.287 [main] INFO  - Entering DOB.. 
+14:49:24.448 [main] INFO  - Entering primaryPhone.. 
+14:49:29.741 [main] INFO  - Entering streetAddress.. 
+14:49:29.872 [main] INFO  - Entering streetAddress.. 
+14:50:22.287 [main] INFO  - Entering ACISPatientID.. 
+14:50:22.408 [main] INFO  - Entering BranchUser.. 
+14:50:22.508 [main] INFO  - Entering Intake.. 
+14:51:22.938 [main] INFO  - Entering GroupNumber.. 
+14:51:23.066 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+14:51:23.162 [main] INFO  - Entering DeductibleMax.. 
+14:51:23.257 [main] INFO  - Entering DeductibleMet.. 
+14:51:50.432 [main] INFO  - Entering ICDCode.. 
+14:51:59.321 [main] INFO  - Entering PhysicianName.. 
+14:52:16.521 [main] INFO  - Entering HCPC.. 
+14:52:16.652 [main] INFO  - Entering IfSupplyWhatIsbaseHCPC.. 
+14:54:55.355 [main] INFO  - Goto my account-->Click on Login.. 
+14:54:55.386 [main] INFO  - Entering email and password.. 
+14:55:09.781 [main] INFO  - Entering Last name.. 
+14:55:10.497 [main] INFO  - Entering First name.. 
+14:55:10.582 [main] INFO  - Entering Zipcode.. 
+14:55:29.224 [main] INFO  - Entering ReferralId.. 
+14:55:37.733 [main] INFO  - Entering PayorName.. 
+14:56:04.389 [main] INFO  - Entering DOB.. 
+14:56:14.536 [main] INFO  - Entering primaryPhone.. 
+14:56:19.823 [main] INFO  - Entering streetAddress.. 
+14:56:19.951 [main] INFO  - Entering streetAddress.. 
+14:57:12.295 [main] INFO  - Entering ACISPatientID.. 
+14:57:12.417 [main] INFO  - Entering BranchUser.. 
+14:57:12.516 [main] INFO  - Entering Intake.. 
+14:58:12.888 [main] INFO  - Entering GroupNumber.. 
+14:58:12.981 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+14:58:13.079 [main] INFO  - Entering DeductibleMax.. 
+14:58:13.165 [main] INFO  - Entering DeductibleMet.. 
+14:58:40.386 [main] INFO  - Entering ICDCode.. 
+14:58:48.810 [main] INFO  - Entering PhysicianName.. 
+14:59:05.692 [main] INFO  - Entering HCPC.. 
+14:59:05.806 [main] INFO  - Entering IfSupplyWhatIsbaseHCPC.. 
+15:05:41.719 [main] INFO  - Goto my account-->Click on Login.. 
+15:05:41.746 [main] INFO  - Entering email and password.. 
+15:05:54.598 [main] INFO  - Entering Last name.. 
+15:05:55.482 [main] INFO  - Entering First name.. 
+15:05:55.582 [main] INFO  - Entering Zipcode.. 
+15:06:15.077 [main] INFO  - Entering ReferralId.. 
+15:06:23.471 [main] INFO  - Entering PayorName.. 
+15:06:50.184 [main] INFO  - Entering DOB.. 
+15:07:00.340 [main] INFO  - Entering primaryPhone.. 
+15:07:05.627 [main] INFO  - Entering streetAddress.. 
+15:07:05.747 [main] INFO  - Entering streetAddress.. 
+15:07:58.120 [main] INFO  - Entering ACISPatientID.. 
+15:07:58.250 [main] INFO  - Entering BranchUser.. 
+15:07:58.358 [main] INFO  - Entering Intake.. 
+15:08:58.843 [main] INFO  - Entering GroupNumber.. 
+15:08:58.938 [main] INFO  - Entering InsuranceCoveragePercentage.. 
+15:08:59.021 [main] INFO  - Entering DeductibleMax.. 
+15:08:59.102 [main] INFO  - Entering DeductibleMet.. 
+15:09:26.337 [main] INFO  - Entering ICDCode.. 
+15:09:34.737 [main] INFO  - Entering PhysicianName.. 
+15:09:51.885 [main] INFO  - Entering HCPC.. 
+15:09:52.017 [main] INFO  - Entering IfSupplyWhatIsbaseHCPC.. 
+17:53:13.035 [main] INFO  - Goto my account-->Click on Login.. 
+17:53:13.067 [main] INFO  - Entering email and password.. 
+17:53:28.027 [main] INFO  - Entering Last name.. 
+17:53:28.964 [main] INFO  - Entering First name.. 
+17:53:29.111 [main] INFO  - Entering Zipcode.. 
+17:54:09.985 [main] INFO  - Entering ReferralId.. 
+17:54:19.228 [main] INFO  - Entering PayorName.. 
+17:54:48.235 [main] INFO  - Entering DOB.. 

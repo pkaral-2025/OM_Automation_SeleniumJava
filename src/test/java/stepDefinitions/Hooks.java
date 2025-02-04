@@ -70,7 +70,7 @@ public class Hooks {
                 List<File> attachments = new ArrayList<>();
 
                 // Attach the Cucumber HTML report (assuming it's generated in 'target/cucumber-reports')
-                File cucumberReport = new File("target/cucumber-reports/cucumber-report.html");
+                File cucumberReport = new File("reports/cucureport.html");
                 if (cucumberReport.exists()) {
                     attachments.add(cucumberReport);
                 }
@@ -80,8 +80,10 @@ public class Hooks {
                 // attachments.add(testLog);
 
                 // Send the email with test case data and attachments
-                EmailUtil.sendEmail("email@example.com", testCases, attachments);
+                EmailUtil.sendEmail("priyanka.karalkar@owens-minor.com", testCases, attachments);
                 System.out.println("Test execution report sent successfully.");
+                
+                System.out.println("Cucumber Report exists: " + cucumberReport.exists());
             }
         } catch (Exception e) {
             e.printStackTrace();

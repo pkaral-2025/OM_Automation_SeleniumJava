@@ -27,6 +27,9 @@ import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
 import utilities.DataReader;
 
+import static org.junit.Assert.assertEquals;
+
+
 public class LoginSteps {
 	WebDriver driver;
 	HomePage hp;
@@ -204,6 +207,39 @@ public class LoginSteps {
 
 	}
 	
+	@When("user enters PhysicianName as {string}")
+	public void user_enters_PhysicianName_as(String PhysicianName) {
+		BaseClass.getLogger().info("Entering PhysicianName.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setPhysicianName(PhysicianName);
+
+	}
+	
+	@When("user enters ICDCode as {string}")
+	public void user_enters_ICDCode_as(String ICDCode) {
+		BaseClass.getLogger().info("Entering ICDCode.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setICDCode(ICDCode);
+
+	}
+	
+	@When("user enters HCPC as {string}")
+	public void user_enters_HCPC_as(String HCPC) {
+		BaseClass.getLogger().info("Entering HCPC.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setHCPC(HCPC);
+
+	}
+	
+	@When("user enters If_supply_what_is_base_HCPC as {string}")
+	public void user_enters_IfSupplyWhatIsbaseHCPC_as(String IfSupplyWhatIsbaseHCPC) {
+		BaseClass.getLogger().info("Entering IfSupplyWhatIsbaseHCPC.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setIfSupplyWhatIsbaseHCPC(IfSupplyWhatIsbaseHCPC);
+
+	}
+	
+	
 	
 //	@When("user enters OrderNotes as {string}")
 //	public void user_enters_OrderNotes_as(String orderNotes) {
@@ -342,6 +378,23 @@ public class LoginSteps {
 	      
 		 BaseClass.javascriptClick(radiobtn);
 	    }
+	 
+	 @Given("user click on Benefit Information {string} button with javascript")
+	 public void click_on_BenefitInformationRelationbtn_using_javascript(String radiobtn) {
+	      
+		 BaseClass.javascriptClickOnBenefitInformationRelationbtn(radiobtn);
+	    }
+	 
+	 @Then("user should see {string}")
+	    public void i_should_see(String expectedText) {
+	        // Find the element containing the text
+	        WebElement element = driver.findElement(By.xpath("//div[contains(text(),'Thank you! The next step in this case has been routed appropriately.')]"));  // Change this to the correct locator for your text
+	        String actualText = element.getText();
+	        
+	        // Assert that the expected text matches the actual text
+	        assertEquals(expectedText, actualText);
+	    }
+	 
 	 
 	 
 	// -----------wait--------//

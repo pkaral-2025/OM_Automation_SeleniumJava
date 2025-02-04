@@ -45,7 +45,9 @@ public class BaseClass {
 	public static WebDriver initilizeBrowser() throws IOException {
 		if (getProperties().getProperty("execution_env").equalsIgnoreCase("remote")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
-
+			
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-popup-blocking");
 			// os
 			if (getProperties().getProperty("os").equalsIgnoreCase("windows")) {
 				capabilities.setPlatform(Platform.WIN11);
@@ -290,6 +292,11 @@ public class BaseClass {
 	//---------------javascript button click-------------//
 	public static void javascriptClick(String radiobtn) {
 		WebElement radioButton = driver.findElement(By.xpath("//div[contains(text(),'Initial Outreach Calls Completed ?')]//following::input[2]"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", radioButton);
+	}
+	
+	public static void javascriptClickOnBenefitInformationRelationbtn(String radiobtn) {
+		WebElement radioButton = driver.findElement(By.xpath("//h2[contains(text(),'Capture Benefit Information')]//following::input[@name='$PpyWorkPage$pPrePrimaryPayorBenefitInformation$pPrimary_Insurance_Relationship'][1]"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", radioButton);
 	}
 	

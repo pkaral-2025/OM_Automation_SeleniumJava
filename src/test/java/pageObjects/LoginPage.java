@@ -169,6 +169,30 @@ public class LoginPage extends BasePage {
 		txtDeductibleMet.sendKeys(DeductibleMet);
 	}
 	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pDiagnosisSearchCode']")
+	WebElement txtICDCode;
+	public void setICDCode(String ICDCode) {
+		txtICDCode.sendKeys(ICDCode);
+	}
+	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pPhysicianSearchName']")
+	WebElement txtPhysicianName;
+	public void setPhysicianName(String PhysicianName) {
+		txtPhysicianName.sendKeys(PhysicianName);
+	}
+	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pProductAcceptInfo$l1$phcpc']")
+	WebElement txtHCPC;
+	public void setHCPC(String HCPC) {
+		txtHCPC.sendKeys(HCPC);
+	}
+	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pProductAcceptInfo$l1$pBaseHCPC']")
+	WebElement txtIfSupplyWhatIsbaseHCPC;
+	public void setIfSupplyWhatIsbaseHCPC(String IfSupplyWhatIsbaseHCPC) {
+		txtIfSupplyWhatIsbaseHCPC.sendKeys(IfSupplyWhatIsbaseHCPC);
+	}
+	
 	
 	// Method to read locators from config file
 	public static Properties getLocator(String fieldName) throws IOException {

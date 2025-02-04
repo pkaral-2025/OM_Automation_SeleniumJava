@@ -22,13 +22,10 @@ import io.cucumber.junit.CucumberOptions;
 					plugin= {"pretty",
 //							"html:reports/myreport.html", 
 							"html:reports/cucureport.html", 
-							"html:reports/cucureportReport.html",
+//							"html:reports/cucureportReport.html",
 							  "rerun:target/rerun.txt",
 							  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 	
-					
-					
-					
 					
 					},
 							
