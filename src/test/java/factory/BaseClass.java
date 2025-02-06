@@ -33,6 +33,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.en.When;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class BaseClass {
@@ -45,7 +47,7 @@ public class BaseClass {
 	public static WebDriver initilizeBrowser() throws IOException {
 		if (getProperties().getProperty("execution_env").equalsIgnoreCase("remote")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
-			
+
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-popup-blocking");
 			// os
@@ -197,9 +199,6 @@ public class BaseClass {
 				WebElement element = driver.findElement(By.xpath(
 						"//div[@onmouseover='pega.c.cbe.processHoverEvent(event)']//preceding::span[@class='menu-item-title' and contains(text(),'Home')]"));
 
-				
-
-				
 				// Create Actions object
 				Actions actions = new Actions(driver);
 
@@ -235,23 +234,22 @@ public class BaseClass {
 		System.out.println("Page loaded successfully.");
 	}
 
-	
-	//===========Retrieve the value from the page=============//
+	// ===========Retrieve the value from the page=============//
 	public static void readValueFromPage() {
-		  // Find the element containing the value you want to extract
-        WebElement valueElement = driver.findElement(By.xpath("//span[@class='case_title']")); // Replace with the correct XPath
+		// Find the element containing the value you want to extract
+		WebElement valueElement = driver.findElement(By.xpath("//span[@class='case_title']")); // Replace with the
+																								// correct XPath
 
-        // Retrieve the text from the element
-        String value = valueElement.getText();
+		// Retrieve the text from the element
+		String value = valueElement.getText();
 
-        // Print the value to the console
-        System.out.println("The value retrieved from the page is: " + value);
+		// Print the value to the console
+		System.out.println("The value retrieved from the page is: " + value);
 
-        // Optionally, store the value for later verification
-        // You can use any global or shared variable for this if needed.
+		// Optionally, store the value for later verification
+		// You can use any global or shared variable for this if needed.
 	}
-	
-	
+
 	// -----------Mouseover-----------//
 	public static void mouseOverOnEle() {
 
@@ -286,22 +284,39 @@ public class BaseClass {
 		}
 
 	}
-	
+
 	// ---------dropdown-----------//
 
-	//---------------javascript button click-------------//
+	// ---------------javascript button click-------------//
 	public static void javascriptClick(String radiobtn) {
-		WebElement radioButton = driver.findElement(By.xpath("//div[contains(text(),'Initial Outreach Calls Completed ?')]//following::input[2]"));
+		WebElement radioButton = driver.findElement(
+				By.xpath("//div[contains(text(),'Initial Outreach Calls Completed ?')]//following::input[2]"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", radioButton);
 	}
-	
+
 	public static void javascriptClickOnBenefitInformationRelationbtn(String radiobtn) {
-		WebElement radioButton = driver.findElement(By.xpath("//h2[contains(text(),'Capture Benefit Information')]//following::input[@name='$PpyWorkPage$pPrePrimaryPayorBenefitInformation$pPrimary_Insurance_Relationship'][1]"));
+		WebElement radioButton = driver.findElement(By.xpath(
+				"//h2[contains(text(),'Capture Benefit Information')]//following::input[@name='$PpyWorkPage$pPrePrimaryPayorBenefitInformation$pPrimary_Insurance_Relationship'][1]"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", radioButton);
 	}
-	
-	
-	
+
+	public static void javascriptClickOnDaignosisModalSubmit_btn(String btn) {
+		WebElement modalBtn = driver.findElement(By.xpath("//button[@id='ModalButtonSubmit']"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", modalBtn);
+	}
+
+	public static void validateText(String expectedText) {
+
+		// Find the element containing the text
+		WebElement element = driver.findElement(By.xpath(
+				"//div[contains(text(),'Thank you! The next step in this case has been routed appropriately.')]"));
+		String actualText = element.getText();
+
+		// Assert that the expected text matches the actual text
+		assertEquals(expectedText, actualText);
+
+	}
+
 	// ------------Date-------------//
 
 //	public static void selectDate(String date) {

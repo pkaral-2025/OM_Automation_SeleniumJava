@@ -29,7 +29,6 @@ import utilities.DataReader;
 
 import static org.junit.Assert.assertEquals;
 
-
 public class LoginSteps {
 	WebDriver driver;
 	HomePage hp;
@@ -141,8 +140,7 @@ public class LoginSteps {
 		lp.setOrderByPhoneNo(orderByPhoneNo);
 
 	}
-	
-	
+
 	@When("user enters ACISPatientID as {string}")
 	public void user_enters_ACISPatientID_as(String ACISPatientID) {
 		BaseClass.getLogger().info("Entering ACISPatientID.. ");
@@ -190,7 +188,7 @@ public class LoginSteps {
 		lp.setInsuranceCoveragePercentage(InsuranceCoveragePercentage);
 
 	}
-	
+
 	@When("user enters DeductibleMaxField as {string}")
 	public void user_enters_DeductibleMaxField_as(String DeductibleMax) {
 		BaseClass.getLogger().info("Entering DeductibleMax.. ");
@@ -198,7 +196,7 @@ public class LoginSteps {
 		lp.setDeductibleMax(DeductibleMax);
 
 	}
-	
+
 	@When("user enters DeductibleMetField as {string}")
 	public void user_enters_DeductibleMet_as(String DeductibleMet) {
 		BaseClass.getLogger().info("Entering DeductibleMet.. ");
@@ -206,7 +204,7 @@ public class LoginSteps {
 		lp.setDeductibleMet(DeductibleMet);
 
 	}
-	
+
 	@When("user enters PhysicianName as {string}")
 	public void user_enters_PhysicianName_as(String PhysicianName) {
 		BaseClass.getLogger().info("Entering PhysicianName.. ");
@@ -214,7 +212,7 @@ public class LoginSteps {
 		lp.setPhysicianName(PhysicianName);
 
 	}
-	
+
 	@When("user enters ICDCode as {string}")
 	public void user_enters_ICDCode_as(String ICDCode) {
 		BaseClass.getLogger().info("Entering ICDCode.. ");
@@ -222,7 +220,7 @@ public class LoginSteps {
 		lp.setICDCode(ICDCode);
 
 	}
-	
+
 	@When("user enters HCPC as {string}")
 	public void user_enters_HCPC_as(String HCPC) {
 		BaseClass.getLogger().info("Entering HCPC.. ");
@@ -230,7 +228,7 @@ public class LoginSteps {
 		lp.setHCPC(HCPC);
 
 	}
-	
+
 	@When("user enters If_supply_what_is_base_HCPC as {string}")
 	public void user_enters_IfSupplyWhatIsbaseHCPC_as(String IfSupplyWhatIsbaseHCPC) {
 		BaseClass.getLogger().info("Entering IfSupplyWhatIsbaseHCPC.. ");
@@ -238,9 +236,7 @@ public class LoginSteps {
 		lp.setIfSupplyWhatIsbaseHCPC(IfSupplyWhatIsbaseHCPC);
 
 	}
-	
-	
-	
+
 //	@When("user enters OrderNotes as {string}")
 //	public void user_enters_OrderNotes_as(String orderNotes) {
 //		BaseClass.getLogger().info("Entering streetAddress.. ");
@@ -255,14 +251,13 @@ public class LoginSteps {
 		BaseClass.clickButton(buttonName);
 
 	}
-	
-	//----------Mouseover----------------//
+
+	// ----------Mouseover----------------//
 	@When("I hover over the {string} element")
-    public void i_hover_over_the_element(String elementLocator) {
-        // Find the element to hover over
-       BaseClass.mouseOverOnEle();
-    }
-	
+	public void i_hover_over_the_element(String elementLocator) {
+		// Find the element to hover over
+		BaseClass.mouseOverOnEle();
+	}
 
 //    @When("I click the {string} button")
 //    public void i_click_the_button(String loginButton) throws InterruptedException {
@@ -361,42 +356,42 @@ public class LoginSteps {
 	@Given("user refresh page and serach element")
 	public void user_refresh_page_and_serach_element() throws InterruptedException {
 
-	    BaseClass.waitForPageLoad();
+		BaseClass.waitForPageLoad();
 	}
 
-	//=============Retrieve 
-	 @When("I retrieve the value from the page")
-	    public void i_retrieve_the_value_from_the_page() {
-	      
-		 BaseClass.readValueFromPage();
-	    }
-	 
+	// =============Retrieve
+	@When("I retrieve the value from the page")
+	public void i_retrieve_the_value_from_the_page() {
 
-	 //---------------javascript click---------//
-	 @Given("user click on {string} button with javascript")
-	 public void click_on_btn_using_javascript(String radiobtn) {
-	      
-		 BaseClass.javascriptClick(radiobtn);
-	    }
-	 
-	 @Given("user click on Benefit Information {string} button with javascript")
-	 public void click_on_BenefitInformationRelationbtn_using_javascript(String radiobtn) {
-	      
-		 BaseClass.javascriptClickOnBenefitInformationRelationbtn(radiobtn);
-	    }
-	 
-	 @Then("user should see {string}")
-	    public void i_should_see(String expectedText) {
-	        // Find the element containing the text
-	        WebElement element = driver.findElement(By.xpath("//div[contains(text(),'Thank you! The next step in this case has been routed appropriately.')]"));  // Change this to the correct locator for your text
-	        String actualText = element.getText();
-	        
-	        // Assert that the expected text matches the actual text
-	        assertEquals(expectedText, actualText);
-	    }
-	 
-	 
-	 
+		BaseClass.readValueFromPage();
+	}
+
+	// ---------------javascript click---------//
+	@Given("user click on {string} button with javascript")
+	public void click_on_btn_using_javascript(String radiobtn) {
+
+		BaseClass.javascriptClick(radiobtn);
+	}
+
+	@Given("user click on Benefit Information {string} button with javascript")
+	public void click_on_BenefitInformationRelationbtn_using_javascript(String radiobtn) {
+
+		BaseClass.javascriptClickOnBenefitInformationRelationbtn(radiobtn);
+	}
+
+	@Given("user click on Daignosis ModalSubmit {string} button with javascript")
+	public void click_on_ModalSubmit_btn_using_javascript(String btn) {
+
+		BaseClass.javascriptClickOnDaignosisModalSubmit_btn(btn);
+	}
+
+	@Then("user should see {string}")
+	public void i_should_see(String expectedText) {
+
+		BaseClass.validateText(expectedText);
+		
+	}
+
 	// -----------wait--------//
 	@Given("user wait for {int} seconds")
 	public void WaitForSeconds(int seconds) throws InterruptedException {
