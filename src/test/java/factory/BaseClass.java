@@ -5,7 +5,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.NoSuchElementException;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.RandomStringUtils;
@@ -16,8 +18,10 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -300,10 +304,84 @@ public class BaseClass {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", radioButton);
 	}
 
-	public static void javascriptClickOnDaignosisModalSubmit_btn(String btn) {
-		WebElement modalBtn = driver.findElement(By.xpath("//button[@id='ModalButtonSubmit']"));
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", modalBtn);
+
+	public static void javascriptClickOnDiagnosisModalSubmit_btn(String btn) throws InterruptedException {
+	    try {
+	        // Store the current window handle (in case a new window is opened)
+	        String mainWindow = driver.getWindowHandle();
+
+	        // Locate the checkbox inside the modal
+	        WebElement modalCheckbox = driver
+	                .findElement(By.xpath("//button[@id='ModalButtonSubmit']//preceding::input[@type='checkbox']"));
+
+	        // Use JavaScriptExecutor to click the checkbox (if normal click doesn't work)
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", modalCheckbox);
+
+	        // Wait for the modal or any potential alert/popup to appear
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	        // Debugging: Print the page source to check if modalId is visible in the DOM
+	        System.out.println(driver.getPageSource()); // Helps to see if modalId is available
+
+	        // Wait for a specific element inside the modal (like a submit button or a visible div)
+	        WebElement submitButton = wait
+	                .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='ModalButtonSubmit']")));
+
+	        // Now, click the button (submit the form inside the modal)
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", submitButton);
+
+	        // Handle unexpected pop-ups (like new windows)
+	        Set<String> windowHandles = driver.getWindowHandles();
+	        for (String handle : windowHandles) {
+	            if (!handle.equals(mainWindow)) {
+	                driver.switchTo().window(handle); // Switch to the new window
+
+	                // Check if the window is blank by checking the title or content
+	                if (driver.getTitle().isEmpty() || driver.getPageSource().isEmpty()) {
+	                    driver.close(); // Close the blank window
+	                } else {
+	                    // If the window has content, we can assume it's the correct pop-up, so break out of the loop
+	                    break;
+	                }
+	            }
+	        }
+
+	        // Switch back to the main window (the modal window)
+	        driver.switchTo().window(mainWindow);
+
+	        // Handle any alerts that might pop up after submitting
+	        try {
+	            Alert alert = driver.switchTo().alert(); // Check if an alert is present
+	            alert.accept(); // Accept (close) the alert
+	        } catch (NoAlertPresentException e) {
+	            System.out.println("No alert present.");
+	        }
+
+	        // Handle error modals (if there's a specific "error" window after submission)
+	        try {
+	            WebElement errorModal = driver.findElement(By.xpath("//div[contains(@class,'error-modal')]"));
+	            if (errorModal.isDisplayed()) {
+	                System.out.println("Error window detected!");
+	                WebElement errorMessage = errorModal.findElement(By.xpath(".//p[@class='error-message']"));
+	                System.out.println("Error message: " + errorMessage.getText());
+	                WebElement closeButton = errorModal.findElement(By.xpath(".//button[contains(@class,'close')]"));
+	                closeButton.click(); // Close the error modal
+	            }
+	        } catch (NoSuchElementException e) {
+	            System.out.println("No error modal detected.");
+	        }
+
+	        // Now the modal should be ready for further interaction
+	        // Example: Interact with elements inside the modal
+	        // WebElement submitButton = driver.findElement(By.id("submitBtn"));
+	        // submitButton.click();
+
+	    } catch (Exception e) {
+	        System.out.println("An error occurred: " + e.getMessage());
+	        // Handle other exceptions as necessary (e.g., logging, retries)
+	    }
 	}
+	
 
 	public static void validateText(String expectedText) {
 

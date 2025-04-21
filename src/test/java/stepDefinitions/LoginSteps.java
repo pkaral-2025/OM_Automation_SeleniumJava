@@ -380,9 +380,9 @@ public class LoginSteps {
 	}
 
 	@Given("user click on Daignosis ModalSubmit {string} button with javascript")
-	public void click_on_ModalSubmit_btn_using_javascript(String btn) {
+	public void click_on_ModalSubmit_btn_using_javascript(String btn) throws InterruptedException {
 
-		BaseClass.javascriptClickOnDaignosisModalSubmit_btn(btn);
+		BaseClass.javascriptClickOnDiagnosisModalSubmit_btn(btn);
 	}
 
 	@Then("user should see {string}")

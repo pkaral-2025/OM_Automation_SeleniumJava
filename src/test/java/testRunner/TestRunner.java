@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 //					features= {".//Features/"},
 					features= {".//Features/ANACases.feature"},
 						
-//						tags = "@creationOfICase",		 
+//						tags = "@creationOfQCase",		 
 					//features= {".//Features/LoginDDTExcel.feature"},
 //					features= {".//Features/Login.feature",".//Features/Registration.feature"},
 					//features= {"@target/rerun.txt"},
@@ -39,7 +39,5 @@ import io.cucumber.junit.CucumberOptions;
 					//tags="@sanity or @regression" //Scenarios tagged with either @sanity or @regression
 		)
 public class TestRunner {
-
-
 	
 		}
