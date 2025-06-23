@@ -116,6 +116,18 @@ public class LoginSteps {
 		lp.setPayorName(payorname);
 
 	}
+	
+	
+	@When("user enters PatientInsuranceID as {string}")
+	public void user_enters_PatientInsuranceID_as(String PatientInsuranceID) {
+		BaseClass.getLogger().info("Entering Insu ID.. ");
+		lp = new LoginPage(BaseClass.getDriver());
+		lp.setPatientInsuranceID(PatientInsuranceID);
+
+	}
+	
+	
+	
 
 	@When("user enters StreetAddress as {string}")
 	public void user_enters_StreetAddress_as(String streetAddress) {
@@ -252,6 +264,83 @@ public class LoginSteps {
 
 	}
 
+	
+	//-----------click btn and handle popup-------------//
+	
+	
+	@When("I submit the diagnosis code selection and handle unexpected popup for {string}")
+	public void i_submit_diagnosis_code_and_handle_unexpected_popup(String submitButtonlocator) throws InterruptedException {
+	    BaseClass.clickSubmitAndHandleUnexpectedPopup(submitButtonlocator);
+	}
+	///////////////////////////////////////////////////////////////
+	
+	
+    @When("the user clicks the {string} button")
+    public void userClicksDiagnosisCodeButton(String buttonName) {
+        BaseClass.clickDiagnosisButton(buttonName);
+    }
+    
+    @When("the user enters {string} in the popup search field and clicks search")
+    public void userEntersDiagnosisCodeInPopup(String code) {
+    	BaseClass.enterDiagnosisCodeInPopup(code);
+    	BaseClass.clickSearchButtonInPopup();
+    }
+
+    @When("the user selects the diagnosis code from the list and submits")
+    public void userSelectsCodeAndSubmits() throws InterruptedException {
+    	BaseClass.selectDiagnosisCheckbox();
+    	BaseClass.submitDiagnosisPopup();
+    }
+
+    @Given("the user switches back to the main window")
+    public void userSwitchesBackToMainWindow() {
+        BaseClass.switchToMainWindow();
+    }
+    
+    
+    @Then("the selected code {string} should be displayed in the main window text field")
+    public void verifyCodeInMainTextField(String expectedCode) {
+        String actualCode = BaseClass.getMainWindowDiagnosisCode();
+        assertEquals(expectedCode, actualCode);
+    }
+
+	
+	
+	
+	
+	
+	//-----------click btn and handle popup-------------//
+	
+	
+    @Then("the user manually sets the diagnosis code to {string}")
+    public void userManuallySetsDiagnosisCode(String diagnosisCode) {
+        BaseClass.setDiagnosisFieldManually(diagnosisCode);
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	// checkbox click
+	
+	@Given("user selects the checkbox with id {string}")
+	public void user_selects_checkbox_with_id(String checkboxId) {
+		
+	    WebElement checkbox = BaseClass.selectCheckboxById(checkboxId);
+	    Assert.assertTrue("Checkbox was not selected successfully", checkbox.isSelected());
+	}
+	
+	
+	//  wait for overlay to disappear
+	
+	@Given("user waits for overlay to disappear")
+	public void user_waits_for_overlay_to_disappear() {
+	    BaseClass.waitForOverlayToDisappear();
+	}
+	
 	// ----------Mouseover----------------//
 	@When("I hover over the {string} element")
 	public void i_hover_over_the_element(String elementLocator) {
@@ -379,6 +468,13 @@ public class LoginSteps {
 		BaseClass.javascriptClickOnBenefitInformationRelationbtn(radiobtn);
 	}
 
+	@Given("user click on Send Fax Radio {string} button with javascript")
+	public void click_on_SendFaxBtn_using_javascript(String radiobtn) {
+
+		BaseClass.javascriptClickOnSendFaxRadioBtn(radiobtn);
+	}
+	
+	
 	@Given("user click on Daignosis ModalSubmit {string} button with javascript")
 	public void click_on_ModalSubmit_btn_using_javascript(String btn) throws InterruptedException {
 

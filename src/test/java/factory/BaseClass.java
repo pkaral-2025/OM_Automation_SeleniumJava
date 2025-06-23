@@ -5,6 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.Set;
@@ -22,7 +24,9 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -47,61 +51,173 @@ public class BaseClass {
 	static Properties p;
 	static Logger logger;
 	static String WebElement;
+	private static WebDriverWait wait;
+	
+	
+//	public static WebDriver initilizeBrowser() throws IOException {
+//		
+//		if (getProperties().getProperty("execution_env").equalsIgnoreCase("remote")) {
+//			
+//			DesiredCapabilities capabilities = new DesiredCapabilities();
+//
+//			ChromeOptions options = new ChromeOptions();
+////			options.addArguments("--disable-popup-blocking");
+//			
+//			
+////			for Diagnosis code pop up setup
+//			// Stealth options
+//		    options.addArguments("--disable-blink-features=AutomationControlled");
+//		    options.setExperimentalOption("excludeSwitches", List.of("enable-automation"));
+//		    options.setExperimentalOption("useAutomationExtension", false);
+//		    // Fake user agent to mimic real browser
+//		    options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/121.0 Safari/537.36");
+//		    
+//		    // Block popup blocker just in case
+//		    options.addArguments("--disable-popup-blocking");
+//		    options.addArguments("start-maximized");
+//
+//			
+//		    // Inject JS to disable automation detection
+//	        ((JavascriptExecutor) driver).executeScript("""
+//	            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+//	            window.navigator.chrome = { runtime: {} };
+//	            Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+//	            Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3] });
+//	        """);
+//		    
+//			
+//			// os
+//			if (getProperties().getProperty("os").equalsIgnoreCase("windows")) {
+//				capabilities.setPlatform(Platform.WIN11);
+//			} else if (getProperties().getProperty("os").equalsIgnoreCase("mac")) {
+//				capabilities.setPlatform(Platform.MAC);
+//			} else {
+//				System.out.println("No matching OS..");
+//			}
+//			// browser
+//			switch (getProperties().getProperty("browser").toLowerCase()) {
+//			case "chrome":
+//				capabilities.setBrowserName("chrome");
+//				break;
+//			case "edge":
+//				capabilities.setBrowserName("MicrosoftEdge");
+//				break;
+//			default:
+//				System.out.println("No matching browser");
+//			}
+//
+//			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+//
+//		} else if (getProperties().getProperty("execution_env").equalsIgnoreCase("local")) {
+//			switch (getProperties().getProperty("browser").toLowerCase()) {
+//			case "chrome":
+//				driver = new ChromeDriver();
+//
+////				ChromeOptions options = new ChromeOptions();
+////				options.addArguments("--start-maximized");
+////				WebDriver driver = new ChromeDriver(options);
+//
+//				break;
+//			case "edge":
+//				driver = new EdgeDriver();
+//				break;
+//			default:
+//				System.out.println("No matching browser");
+//				driver = null;
+//			}
+//		}
+//		driver.manage().deleteAllCookies();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+//
+//		return driver;
+//
+//	}
+//	
+	
+	
+	
+	
+//	---------------New code for pop up handling and blank window appears------------------//
 
-	public static WebDriver initilizeBrowser() throws IOException {
-		if (getProperties().getProperty("execution_env").equalsIgnoreCase("remote")) {
-			DesiredCapabilities capabilities = new DesiredCapabilities();
+	public static WebDriver initializeBrowser() throws IOException {
+	    ChromeOptions options = new ChromeOptions();
 
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--disable-popup-blocking");
-			// os
-			if (getProperties().getProperty("os").equalsIgnoreCase("windows")) {
-				capabilities.setPlatform(Platform.WIN11);
-			} else if (getProperties().getProperty("os").equalsIgnoreCase("mac")) {
-				capabilities.setPlatform(Platform.MAC);
-			} else {
-				System.out.println("No matching OS..");
-			}
-			// browser
-			switch (getProperties().getProperty("browser").toLowerCase()) {
-			case "chrome":
-				capabilities.setBrowserName("chrome");
-				break;
-			case "edge":
-				capabilities.setBrowserName("MicrosoftEdge");
-				break;
-			default:
-				System.out.println("No matching browser");
-			}
+	    // Stealth and anti-detection options
+	    options.addArguments("--disable-blink-features=AutomationControlled");
+	    options.setExperimentalOption("excludeSwitches", List.of("enable-automation"));
+	    options.setExperimentalOption("useAutomationExtension", false);
+	    options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/121.0 Safari/537.36");
+	    options.addArguments("--disable-popup-blocking");
+	    options.addArguments("start-maximized");
+	    options.addArguments("disable-infobars");
 
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+	    if (getProperties().getProperty("execution_env").equalsIgnoreCase("remote")) {
+	        DesiredCapabilities capabilities = new DesiredCapabilities();
+	        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
-		} else if (getProperties().getProperty("execution_env").equalsIgnoreCase("local")) {
-			switch (getProperties().getProperty("browser").toLowerCase()) {
-			case "chrome":
-				driver = new ChromeDriver();
+	        // Platform setting
+	        String os = getProperties().getProperty("os");
+	        if ("windows".equalsIgnoreCase(os)) {
+	            capabilities.setPlatform(Platform.WIN11);
+	        } else if ("mac".equalsIgnoreCase(os)) {
+	            capabilities.setPlatform(Platform.MAC);
+	        }
 
-//				ChromeOptions options = new ChromeOptions();
-//				options.addArguments("--start-maximized");
-//				WebDriver driver = new ChromeDriver(options);
+	        // Browser setting
+	        String browser = getProperties().getProperty("browser").toLowerCase();
+	        if (browser.equals("chrome")) {
+	            capabilities.setBrowserName("chrome");
+	        } else if (browser.equals("edge")) {
+	            capabilities.setBrowserName("MicrosoftEdge");
+	        }
 
-				break;
-			case "edge":
-				driver = new EdgeDriver();
-				break;
-			default:
-				System.out.println("No matching browser");
-				driver = null;
-			}
-		}
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+	        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+	    } else {
+	        // Local execution
+	        switch (getProperties().getProperty("browser").toLowerCase()) {
+	            case "chrome":
+	                driver = new ChromeDriver(options);
+	                break;
+	            case "edge":
+	                driver = new EdgeDriver(); // EdgeOptions can be applied similarly if needed
+	                break;
+	            default:
+	                System.out.println("Unsupported browser for local execution.");
+	        }
+	    }
 
-		return driver;
+	    // Driver setup
+	    driver.manage().deleteAllCookies();
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 
+	    // Inject JavaScript to mask Selenium detection AFTER driver init
+	    if (driver instanceof JavascriptExecutor js) {
+	        js.executeScript("""
+	            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+	            window.navigator.chrome = { runtime: {} };
+	            Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+	            Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3] });
+	        """);
+	    }
+
+	    return driver;
 	}
-
+	
+//	---------------New code for pop up handling and blank window appears------------------//
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static WebDriver getDriver() {
 		return driver;
 	}
@@ -166,6 +282,236 @@ public class BaseClass {
 		Thread.sleep(500);
 	}
 
+
+//	-----------click on button and handle popup-------------------//
+
+	////////////////////////////////////
+	
+	
+	 public static void clickDiagnosisButton(String buttonName) {
+		 
+			
+	 	    WebElement diagnosisButton = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@name='ICaseInfOnQCase_pyWorkPage_69']")));
+	        diagnosisButton.click();
+	    }
+
+	    public static void enterDiagnosisCodeInPopup(String code) {
+	        WebElement inputField = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(
+	                By.xpath("//input[@name='$PpyWorkPage$pDiagnosisSearchCode']")));
+	        inputField.clear();
+	        inputField.sendKeys(code);
+	    }
+
+	    public static void clickSearchButtonInPopup() {
+	    	
+	    	WebElement searchButton = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@name='DiagnosisSearch_pyWorkPage_47']")));
+	        searchButton.click();
+	    }
+
+	    public static void selectDiagnosisCheckbox() throws InterruptedException {
+//	        WebElement checkbox = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(
+//	                By.xpath("//input[@type='checkbox' and contains(@data-ctl, 'Checkbox') and contains(@data-click, 'SetDiagnosisCodeSelection')]")));
+//	        checkbox.click();
+	        
+	    	WebElement checkbox = new WebDriverWait(driver, Duration.ofSeconds(10)).until(
+	    		    ExpectedConditions.elementToBeClickable(
+	    		        By.xpath("//input[@type='checkbox' and contains(@data-ctl, 'Checkbox') and contains(@data-click, 'SetDiagnosisCodeSelection')]")));
+
+	    		JavascriptExecutor js = (JavascriptExecutor) driver;
+	    		js.executeScript("arguments[0].click();", checkbox);
+
+	        
+	        
+	        Thread.sleep(1000);
+	    }
+
+	    public static void submitDiagnosisPopup() {
+	    	
+	        WebElement submitButton = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[@class='buttonTdMiddle']//button[@id='ModalButtonSubmit']")));
+	        submitButton.click();
+	        
+	       
+	        
+	        
+	        
+	    }
+	    
+	    public static void switchToMainWindow() {
+	        
+	    	// Switch to main content from any frame/modal
+	        driver.switchTo().defaultContent();
+
+	        By diagnosisFieldLocator = By.xpath("//input[@name='$PpyWorkPage$pDX']");
+
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	        // Wait for the field to be visible
+	        WebElement mainWinField = wait.until(ExpectedConditions.visibilityOfElementLocated(diagnosisFieldLocator));
+
+	        // Wait for the value to be non-empty (i.e., populated with the selected code)
+	        wait.until(driver -> {
+	            String value = driver.findElement(diagnosisFieldLocator).getAttribute("value").trim();
+	            System.out.println("Diagnosis field value (polling): '" + value + "'");
+	            return !value.isEmpty();
+	        });
+
+	        System.out.println("Successfully switched back to main window and found populated value: " +
+	            driver.findElement(diagnosisFieldLocator).getAttribute("value"));
+	    }
+	    
+	    
+	    
+
+	    public static String getMainWindowDiagnosisCode() {
+//	        WebElement codeField = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(
+//	                By.xpath("//input[@name='$PpyWorkPage$pDX']")));
+//	        return codeField.getAttribute("value");
+	        
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	        wait.until(driver -> {
+	            String val = driver.findElement(By.xpath("//input[@name='$PpyWorkPage$pDX']")).getAttribute("value");
+	            System.out.println("Diagnosis field value (polling): '" + val + "'");
+	            return val != null && !val.trim().isEmpty();
+	        });
+			return WebElement;
+	        
+	       	        
+	    }
+	
+	
+	    public static void setDiagnosisFieldManually(String code) {
+	        try {
+	            // Set the value directly via JavaScript
+	            ((JavascriptExecutor) driver).executeScript(
+	                "document.getElementByName('$PpyWorkPage$pDX').value = arguments[0];", code
+	            );
+
+	            // Optional: Add a small pause or verification
+	            Thread.sleep(1000);
+
+	            // Optional log
+	            System.out.println("Diagnosis code manually set to: " + code);
+
+	        } catch (Exception e) {
+	            System.err.println("Failed to set diagnosis code manually: " + e.getMessage());
+	        }
+	    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	///////////////////////////////////////////////////
+	
+	public static String getSelectedCheckboxValue() {
+	    List<WebElement> selectedCheckboxes = driver.findElements(By.cssSelector("input[type='checkbox']:checked"));
+	    if (!selectedCheckboxes.isEmpty()) {
+	        WebElement cb = selectedCheckboxes.get(0);
+	        String val = cb.getAttribute("value");
+	        if (val == null || val.isEmpty()) {
+	            val = cb.getAttribute("data-value");
+	        }
+	        if (val == null || val.isEmpty()) {
+	            val = cb.getAttribute("id");
+	        }
+	        return val != null ? val : "";
+	    }
+	    return "";
+	}
+
+	
+	public static void clickSubmitAndHandleUnexpectedPopup(String submitButtonlocator) throws InterruptedException {
+	    try {
+	        // Block window.open popups temporarily
+	        ((JavascriptExecutor) driver).executeScript("window.open = function() { console.log('Blocked window.open call'); }");
+
+	        // Use fixed XPath as requested
+	        String submitButtonXPath = "//button[@id='ModalButtonSubmit']";
+
+	        WebElement submitButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+	                .until(ExpectedConditions.elementToBeClickable(By.xpath(submitButtonXPath)));
+
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
+
+	        String originalWindow = driver.getWindowHandle();
+	        Set<String> oldWindows = driver.getWindowHandles();
+
+	        // Capture selected checkbox value BEFORE submit
+	        String selectedValue = getSelectedCheckboxValue();
+	        System.out.println("Selected checkbox value before submit: " + selectedValue);
+
+	        submitButton.click();
+	        System.out.println("Clicked submit button");
+
+	        Thread.sleep(1000);
+
+	        // Handle unexpected popup window if opened
+	        Set<String> allWindows = driver.getWindowHandles();
+	        if (allWindows.size() > oldWindows.size()) {
+	            allWindows.removeAll(oldWindows);
+	            String unexpectedWindow = allWindows.iterator().next();
+
+	            driver.switchTo().window(unexpectedWindow);
+	            Thread.sleep(500);
+	            driver.close();
+	            driver.switchTo().window(originalWindow);
+	            System.out.println("Closed unexpected popup and returned to original window");
+	        }
+
+	        // Re-find element after modal closes / page updates
+	        WebElement resultElement = new WebDriverWait(driver, Duration.ofSeconds(10))
+	                .until(ExpectedConditions.visibilityOfElementLocated(By.id("DiagnosisCodeResult")));
+
+	        // Retry logic for stale element
+	        int attempts = 0;
+	        while (attempts < 2) {
+	            try {
+	                String tagName = resultElement.getTagName();
+	                if (tagName.equalsIgnoreCase("input") || tagName.equalsIgnoreCase("textarea")) {
+	                    resultElement.clear();
+	                    resultElement.sendKeys(selectedValue);
+	                } else {
+	                    ((JavascriptExecutor) driver).executeScript("arguments[0].textContent = arguments[1];", resultElement, selectedValue);
+	                }
+	                System.out.println("Inserted selected diagnosis code into main window.");
+	                break; // success
+	            } catch (StaleElementReferenceException e) {
+	                System.out.println("StaleElementReferenceException caught, retrying to find element...");
+	                Thread.sleep(500);
+	                resultElement = new WebDriverWait(driver, Duration.ofSeconds(10))
+	                        .until(ExpectedConditions.visibilityOfElementLocated(By.id("DiagnosisCodeResult")));
+	            }
+	            attempts++;
+	        }
+
+	    } catch (TimeoutException e) {
+	        System.out.println("Element not found or not clickable in time.");
+	    } catch (NoSuchWindowException e) {
+	        System.out.println("Window was closed unexpectedly.");
+	    } catch (Exception e) {
+	        System.out.println("Unexpected error: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
+//	-----------click on button and handle popup-------------------//
+	
+	
+	
+	
+	
+	
+	
 	// -------javascript executor wait----------//
 	public static void jsWaitForPageToLoad() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -179,6 +525,53 @@ public class BaseClass {
 		}
 	}
 
+	//  checkbox click
+	
+	public static WebElement selectCheckboxById(String checkboxId) {
+		
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@name='DiagnosisSearch_pyWorkPage_47']//following::div[@class='oflowDivM ']//input[2]")));
+	    
+	    if (!checkbox.isSelected()) {
+	        checkbox.click();
+	    }
+		return checkbox;
+	}
+
+	
+	//  wait for overlay to disappear
+	
+	public static void waitForOverlayToDisappear() {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+//	    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='pega_ui_busyIndicator pz-po-l']")));
+	
+	 // Wait until overlay is not visible or not present at all
+	    wait.until(driver -> {
+	        try {
+	            WebElement overlay = driver.findElement(By.xpath("//div[@class='pega_ui_busyIndicator pz-po-l']"));
+	            return !overlay.isDisplayed();
+	        } catch (NoSuchElementException e) {
+	            return true; // Overlay is not in the DOM, so it's "gone"
+	        }
+	    });
+	    
+	    
+	    
+	    
+	    
+	    try {
+	        Thread.sleep(500);  // Not ideal, but helps in stubborn UI timing issues
+	    } catch (InterruptedException e) {
+	        Thread.currentThread().interrupt();
+	    }
+	
+	    
+	   
+	    
+	}
+	
+	
+	
 	// Method to refresh the page until all elements load
 	public static void waitForPageLoad() throws InterruptedException {
 		WebDriverWait waitForPageLoad = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -304,7 +697,14 @@ public class BaseClass {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", radioButton);
 	}
 
+//----------Send fax receipt to referral for order confirmation----------//
+	public static void javascriptClickOnSendFaxRadioBtn(String radiobtn) {
+		WebElement radioButton = driver.findElement(
+				By.xpath("//label[contains(text(),'Send fax receipt to referral for order confirmation?')]//following::input[@name='$PpyWorkPage$pIsReferralFaxConfirm'][1]"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", radioButton);
+	}
 
+	
 	public static void javascriptClickOnDiagnosisModalSubmit_btn(String btn) throws InterruptedException {
 	    try {
 	        // Store the current window handle (in case a new window is opened)

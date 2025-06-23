@@ -90,6 +90,11 @@ public class LoginPage extends BasePage {
 		txtPayorName.sendKeys(referralId);
 	}
 	
+	public void setPatientInsuranceID(String InsuID) {
+		txtInsuID.sendKeys(InsuID);
+	}
+	
+	
 	public void setDOB(String dob) {
 		txtDOB.sendKeys(dob);
 	}
@@ -192,6 +197,15 @@ public class LoginPage extends BasePage {
 	public void setIfSupplyWhatIsbaseHCPC(String IfSupplyWhatIsbaseHCPC) {
 		txtIfSupplyWhatIsbaseHCPC.sendKeys(IfSupplyWhatIsbaseHCPC);
 	}
+	
+	@FindBy(xpath = "//input[@name='$PpyWorkPage$pPrimary_Insurance_ID']")
+	WebElement txtInsuID;
+	public void settxtInsuID(String InsuID) {
+		txtInsuID.sendKeys(InsuID);
+	}
+	
+	
+	
 	
 	
 	// Method to read locators from config file
