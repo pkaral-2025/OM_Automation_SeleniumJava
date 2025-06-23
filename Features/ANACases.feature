@@ -56,9 +56,9 @@ Feature: Creation of cases
    	Given user wait for 10 seconds
    	Given user click on "InitialOutreachCallsRadiobtn_No" button with javascript
    		Given user wait for 5 seconds
-   	Given I click on the "SendFaxReceiptToReferralRadio_btn" button
+   	Given user click on Send Fax Radio "SendFaxReceiptToReferralRadio_btn" button with javascript
    	
-   	Given user wait for 10 seconds
+   	Given user wait for 5 seconds
     Given I click on the "Save_btn" button
     When I retrieve the value from the page
    	Given user wait for 10 seconds
@@ -117,7 +117,8 @@ Feature: Creation of cases
    	When I select the option "Cofflator" from the dropdown with id "AddProd_dropdwn"
    	Given I click on the "AddProd_btn" button
    	When I select the option "Accept" from the dropdown with id "Decision_dropdwn"
-   	Given I click on the "SendFaxReceiptToReferralRadio_btn" button
+   	 	Given user wait for 5 seconds
+  Given user click on Send Fax Radio "SendFaxReceiptToReferralRadio_btn" button with javascript
    	
    	Given user wait for 10 seconds
    	When user enters DOB as "*11/13/1988"
