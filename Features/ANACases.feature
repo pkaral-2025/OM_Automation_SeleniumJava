@@ -25,6 +25,7 @@ Feature: Creation of cases
    		Given user wait for jscript 5 seconds
    	When I select the option "Walk-In Customer" from the dropdown with id "OrderType_dropdwn"
    	Given user wait for 10 seconds
+   	
    	Given I click on the "ReferralSearch_btn" button
    	When user enters ReferralId as "*aaa01"
    	Given I click on the "ReferralLayoutSearch_btn" button
@@ -37,8 +38,13 @@ Feature: Creation of cases
  		Given I click on the "PayorLayoutSearch_btn" button
  		Given I click on the "PayorLayoutRadio_btn" button
    	Given I click on the "LayoutSubmit_btn" button
-   		
-   	Given user wait for 10 seconds
+   	Given user wait for 5 seconds
+   	
+   #	Given I click on the "AdditionalInsuranceInfo_btn" button
+   	When user enters PatientInsuranceID as "H12345678"
+   	Given user wait for 5 seconds
+   	
+   	
    	When I select the option "Cofflator" from the dropdown with id "AddProd_dropdwn"
    	Given I click on the "AddProd_btn" button
    	When I select the option "Accept" from the dropdown with id "Decision_dropdwn"
@@ -112,8 +118,12 @@ Feature: Creation of cases
  		Given I click on the "PayorLayoutSearch_btn" button
  		Given I click on the "PayorLayoutRadio_btn" button
    	Given I click on the "LayoutSubmit_btn" button
-   	   		
    	Given user wait for 10 seconds
+   	
+ #		Given I click on the "AdditionalInsuranceInfo_btn" button
+   	When user enters PatientInsuranceID as "H12345678"
+   	Given user wait for 5 seconds
+   	
    	When I select the option "Cofflator" from the dropdown with id "AddProd_dropdwn"
    	Given I click on the "AddProd_btn" button
    	When I select the option "Accept" from the dropdown with id "Decision_dropdwn"
@@ -261,16 +271,16 @@ Feature: Creation of cases
 				Given user wait for 10 seconds
 			
 			
-	 #		When the user clicks the "DiagnosisCode" button
+#	 #		When the user clicks the "DiagnosisCode" button
     #And the user enters "J44.9" in the popup search field and clicks search
     #And the user selects the diagnosis code from the list and submits
- 	 #	Given the user switches back to the main window
+ #	 #	Given the user switches back to the main window
     #Then the selected code "J44.9" should be displayed in the main window text field
 
 		#And the user manually sets the diagnosis code to "J44.9"
 
 
-		Given user wait for 10 seconds
+#		Given user wait for 10 seconds
 		
 		Given I click on the "PhysicianSearch_btn" button	
 		When user enters PhysicianName as "DAVID"
